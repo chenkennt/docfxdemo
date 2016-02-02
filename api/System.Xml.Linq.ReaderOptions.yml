@@ -1,0 +1,81 @@
+items:
+- uid: System.Xml.Linq.ReaderOptions
+  id: ReaderOptions
+  parent: System.Xml.Linq
+  children:
+  - System.Xml.Linq.ReaderOptions.None
+  - System.Xml.Linq.ReaderOptions.OmitDuplicateNamespaces
+  langs:
+  - csharp
+  - vb
+  name: ReaderOptions
+  fullName: System.Xml.Linq.ReaderOptions
+  type: Enum
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+    startLine: 649
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Specifies a set of options for CreateReader().
+  example: []
+  syntax:
+    content: 'public enum ReaderOptions : int'
+    content.vb: Public Enum ReaderOptions As Integer
+- uid: System.Xml.Linq.ReaderOptions.None
+  id: None
+  parent: System.Xml.Linq.ReaderOptions
+  langs:
+  - csharp
+  - vb
+  name: None
+  fullName: System.Xml.Linq.ReaderOptions.None
+  type: Field
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+    startLine: 653
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Default options.
+  example: []
+  syntax:
+    content: None = null
+    content.vb: None = Nothing
+- uid: System.Xml.Linq.ReaderOptions.OmitDuplicateNamespaces
+  id: OmitDuplicateNamespaces
+  parent: System.Xml.Linq.ReaderOptions
+  langs:
+  - csharp
+  - vb
+  name: OmitDuplicateNamespaces
+  fullName: System.Xml.Linq.ReaderOptions.OmitDuplicateNamespaces
+  type: Field
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+    startLine: 656
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Remove duplicate namespace declarations.
+  example: []
+  syntax:
+    content: OmitDuplicateNamespaces = null
+    content.vb: OmitDuplicateNamespaces = Nothing
+references:
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq

@@ -1,0 +1,2478 @@
+items:
+- uid: System.Xml.Linq.XDocument
+  id: XDocument
+  parent: System.Xml.Linq
+  children:
+  - System.Xml.Linq.XDocument.#ctor
+  - System.Xml.Linq.XDocument.#ctor(System.Object[])
+  - System.Xml.Linq.XDocument.#ctor(System.Xml.Linq.XDeclaration,System.Object[])
+  - System.Xml.Linq.XDocument.#ctor(System.Xml.Linq.XDocument)
+  - System.Xml.Linq.XDocument.Declaration
+  - System.Xml.Linq.XDocument.DocumentType
+  - System.Xml.Linq.XDocument.Load(Stream)
+  - System.Xml.Linq.XDocument.Load(Stream,System.Xml.Linq.LoadOptions)
+  - System.Xml.Linq.XDocument.Load(System.String)
+  - System.Xml.Linq.XDocument.Load(System.String,System.Xml.Linq.LoadOptions)
+  - System.Xml.Linq.XDocument.Load(TextReader)
+  - System.Xml.Linq.XDocument.Load(TextReader,System.Xml.Linq.LoadOptions)
+  - System.Xml.Linq.XDocument.Load(XmlReader)
+  - System.Xml.Linq.XDocument.Load(XmlReader,System.Xml.Linq.LoadOptions)
+  - System.Xml.Linq.XDocument.NodeType
+  - System.Xml.Linq.XDocument.Parse(System.String)
+  - System.Xml.Linq.XDocument.Parse(System.String,System.Xml.Linq.LoadOptions)
+  - System.Xml.Linq.XDocument.Root
+  - System.Xml.Linq.XDocument.Save(Stream)
+  - System.Xml.Linq.XDocument.Save(Stream,System.Xml.Linq.SaveOptions)
+  - System.Xml.Linq.XDocument.Save(TextWriter)
+  - System.Xml.Linq.XDocument.Save(TextWriter,System.Xml.Linq.SaveOptions)
+  - System.Xml.Linq.XDocument.Save(XmlWriter)
+  - System.Xml.Linq.XDocument.WriteTo(XmlWriter)
+  langs:
+  - csharp
+  - vb
+  name: XDocument
+  fullName: System.Xml.Linq.XDocument
+  type: Class
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 25
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Represents an XML document.
+  remarks: >-
+    An <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> can contain:
+
+    <list><item>
+
+    A Document Type Declaration (DTD), see <xref href="System.Xml.Linq.XDocumentType" data-throw-if-not-resolved="false"></xref></item><item>One root element.</item><item>Zero or more <xref href="System.Xml.Linq.XComment" data-throw-if-not-resolved="false"></xref> objects.</item><item>Zero or more <xref href="System.Xml.Linq.XProcessingInstruction" data-throw-if-not-resolved="false"></xref> objects.</item></list>
+  example: []
+  syntax:
+    content: 'public class XDocument : XContainer'
+    content.vb: Public Class XDocument Inherits XContainer
+  inheritance:
+  - System.Object
+  - System.Xml.Linq.XObject
+  - System.Xml.Linq.XNode
+  - System.Xml.Linq.XContainer
+  inheritedMembers:
+  - System.Xml.Linq.XContainer.FirstNode
+  - System.Xml.Linq.XContainer.LastNode
+  - System.Xml.Linq.XContainer.Add(System.Object)
+  - System.Xml.Linq.XContainer.Add(System.Object[])
+  - System.Xml.Linq.XContainer.AddFirst(System.Object)
+  - System.Xml.Linq.XContainer.AddFirst(System.Object[])
+  - System.Xml.Linq.XContainer.CreateWriter
+  - System.Xml.Linq.XContainer.DescendantNodes
+  - System.Xml.Linq.XContainer.Descendants
+  - System.Xml.Linq.XContainer.Descendants(System.Xml.Linq.XName)
+  - System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)
+  - System.Xml.Linq.XContainer.Elements
+  - System.Xml.Linq.XContainer.Elements(System.Xml.Linq.XName)
+  - System.Xml.Linq.XContainer.Nodes
+  - System.Xml.Linq.XContainer.RemoveNodes
+  - System.Xml.Linq.XContainer.ReplaceNodes(System.Object)
+  - System.Xml.Linq.XContainer.ReplaceNodes(System.Object[])
+  - System.Xml.Linq.XNode.NextNode
+  - System.Xml.Linq.XNode.PreviousNode
+  - System.Xml.Linq.XNode.DocumentOrderComparer
+  - System.Xml.Linq.XNode.EqualityComparer
+  - System.Xml.Linq.XNode.AddAfterSelf(System.Object)
+  - System.Xml.Linq.XNode.AddAfterSelf(System.Object[])
+  - System.Xml.Linq.XNode.AddBeforeSelf(System.Object)
+  - System.Xml.Linq.XNode.AddBeforeSelf(System.Object[])
+  - System.Xml.Linq.XNode.Ancestors
+  - System.Xml.Linq.XNode.Ancestors(System.Xml.Linq.XName)
+  - System.Xml.Linq.XNode.CompareDocumentOrder(System.Xml.Linq.XNode,System.Xml.Linq.XNode)
+  - System.Xml.Linq.XNode.CreateReader
+  - System.Xml.Linq.XNode.CreateReader(System.Xml.Linq.ReaderOptions)
+  - System.Xml.Linq.XNode.NodesAfterSelf
+  - System.Xml.Linq.XNode.NodesBeforeSelf
+  - System.Xml.Linq.XNode.ElementsAfterSelf
+  - System.Xml.Linq.XNode.ElementsAfterSelf(System.Xml.Linq.XName)
+  - System.Xml.Linq.XNode.ElementsBeforeSelf
+  - System.Xml.Linq.XNode.ElementsBeforeSelf(System.Xml.Linq.XName)
+  - System.Xml.Linq.XNode.IsAfter(System.Xml.Linq.XNode)
+  - System.Xml.Linq.XNode.IsBefore(System.Xml.Linq.XNode)
+  - System.Xml.Linq.XNode.ReadFrom(XmlReader)
+  - System.Xml.Linq.XNode.Remove
+  - System.Xml.Linq.XNode.ReplaceWith(System.Object)
+  - System.Xml.Linq.XNode.ReplaceWith(System.Object[])
+  - System.Xml.Linq.XNode.ToString
+  - System.Xml.Linq.XNode.ToString(System.Xml.Linq.SaveOptions)
+  - System.Xml.Linq.XNode.DeepEquals(System.Xml.Linq.XNode,System.Xml.Linq.XNode)
+  - System.Xml.Linq.XObject.BaseUri
+  - System.Xml.Linq.XObject.Document
+  - System.Xml.Linq.XObject.Parent
+  - System.Xml.Linq.XObject.AddAnnotation(System.Object)
+  - System.Xml.Linq.XObject.Annotation(Type)
+  - System.Xml.Linq.XObject.Annotation``1
+  - System.Xml.Linq.XObject.Annotations(Type)
+  - System.Xml.Linq.XObject.Annotations``1
+  - System.Xml.Linq.XObject.RemoveAnnotations(Type)
+  - System.Xml.Linq.XObject.RemoveAnnotations``1
+  - System.Xml.Linq.XObject.Changed
+  - System.Xml.Linq.XObject.Changing
+- uid: System.Xml.Linq.XDocument.#ctor
+  id: '#ctor'
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: XDocument()
+  fullName: System.Xml.Linq.XDocument.XDocument()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 39
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Initializes a new instance of the <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public XDocument()
+    content.vb: Public Sub New
+- uid: System.Xml.Linq.XDocument.#ctor(System.Object[])
+  id: '#ctor(System.Object[])'
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: XDocument(Object[])
+  name.vb: XDocument(Object())
+  fullName: System.Xml.Linq.XDocument.XDocument(System.Object[])
+  fullName.vb: System.Xml.Linq.XDocument.XDocument(System.Object())
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 60
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Initializes a new instance of the <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> class with the specified content.
+  remarks: >-
+    Valid content includes:
+
+    <list><item>Zero or one <xref href="System.Xml.Linq.XDocumentType" data-throw-if-not-resolved="false"></xref> objects</item><item>Zero or one elements</item><item>Zero or more comments</item><item>Zero or more processing instructions</item></list>
+
+    See <xref href="System.Xml.Linq.XContainer.Add(System.Object)" data-throw-if-not-resolved="false"></xref> for details about the content that can be added
+
+    using this method.
+  example: []
+  syntax:
+    content: public XDocument(params object[] content)
+    content.vb: Public Sub New(ParamArray content As Object())
+    parameters:
+    - id: content
+      type: System.Object[]
+      description: A parameter list of content objects to add to this document.
+- uid: System.Xml.Linq.XDocument.#ctor(System.Xml.Linq.XDeclaration,System.Object[])
+  id: '#ctor(System.Xml.Linq.XDeclaration,System.Object[])'
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: XDocument(XDeclaration, Object[])
+  name.vb: XDocument(XDeclaration, Object())
+  fullName: System.Xml.Linq.XDocument.XDocument(System.Xml.Linq.XDeclaration, System.Object[])
+  fullName.vb: System.Xml.Linq.XDocument.XDocument(System.Xml.Linq.XDeclaration, System.Object())
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 88
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Initializes a new instance of the <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> class
+
+    with the specified <xref href="System.Xml.Linq.XDeclaration" data-throw-if-not-resolved="false"></xref> and content.
+  remarks: >-
+    Valid content includes:
+
+    <list><item>Zero or one <xref href="System.Xml.Linq.XDocumentType" data-throw-if-not-resolved="false"></xref> objects</item><item>Zero or one elements</item><item>Zero or more comments</item><item>Zero or more processing instructions</item><item></item></list>
+
+    See <xref href="System.Xml.Linq.XContainer.Add(System.Object)" data-throw-if-not-resolved="false"></xref> for details about the content that can be added
+
+    using this method.
+  example: []
+  syntax:
+    content: public XDocument(XDeclaration declaration, params object[] content)
+    content.vb: Public Sub New(declaration As XDeclaration, ParamArray content As Object())
+    parameters:
+    - id: declaration
+      type: System.Xml.Linq.XDeclaration
+      description: The XML declaration for the document.
+    - id: content
+      type: System.Object[]
+      description: The contents of the document.
+- uid: System.Xml.Linq.XDocument.#ctor(System.Xml.Linq.XDocument)
+  id: '#ctor(System.Xml.Linq.XDocument)'
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: XDocument(XDocument)
+  fullName: System.Xml.Linq.XDocument.XDocument(System.Xml.Linq.XDocument)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 101
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Initializes a new instance of the <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> class from an
+
+    existing XDocument object.
+  example: []
+  syntax:
+    content: public XDocument(XDocument other)
+    content.vb: Public Sub New(other As XDocument)
+    parameters:
+    - id: other
+      type: System.Xml.Linq.XDocument
+      description: The <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> object that will be copied.
+- uid: System.Xml.Linq.XDocument.Declaration
+  id: Declaration
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Declaration
+  fullName: System.Xml.Linq.XDocument.Declaration
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 113
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the XML declaration for this document.
+  example: []
+  syntax:
+    content: public XDeclaration Declaration { get; set; }
+    content.vb: Public Property Declaration As XDeclaration
+    parameters: []
+    return:
+      type: System.Xml.Linq.XDeclaration
+- uid: System.Xml.Linq.XDocument.DocumentType
+  id: DocumentType
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: DocumentType
+  fullName: System.Xml.Linq.XDocument.DocumentType
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 122
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the Document Type Definition (DTD) for this document.
+  example: []
+  syntax:
+    content: public XDocumentType DocumentType { get; }
+    content.vb: Public ReadOnly Property DocumentType As XDocumentType
+    parameters: []
+    return:
+      type: System.Xml.Linq.XDocumentType
+- uid: System.Xml.Linq.XDocument.NodeType
+  id: NodeType
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: NodeType
+  fullName: System.Xml.Linq.XDocument.NodeType
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 136
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the node type for this node.
+  remarks: This property will always return XmlNodeType.Document.
+  example: []
+  syntax:
+    content: public override XmlNodeType NodeType { get; }
+    content.vb: Public Overrides ReadOnly Property NodeType As XmlNodeType
+    parameters: []
+    return:
+      type: XmlNodeType
+  overridden: System.Xml.Linq.XObject.NodeType
+- uid: System.Xml.Linq.XDocument.Root
+  id: Root
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Root
+  fullName: System.Xml.Linq.XDocument.Root
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 147
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the root element of the XML Tree for this document.
+  example: []
+  syntax:
+    content: public XElement Root { get; }
+    content.vb: Public ReadOnly Property Root As XElement
+    parameters: []
+    return:
+      type: System.Xml.Linq.XElement
+- uid: System.Xml.Linq.XDocument.Load(System.String)
+  id: Load(System.String)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Load(String)
+  fullName: System.Xml.Linq.XDocument.Load(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 184
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Create a new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> based on the contents of the file
+
+    referenced by the URI parameter passed in.  Note: Use
+
+    <xref href="System.Xml.Linq.XDocument.Parse(System.String)" data-throw-if-not-resolved="false"></xref> to create an <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> from
+
+    a string containing XML.
+
+    <seealso cref="!:XmlReader.Create(string)" /><xref href="System.Xml.Linq.XDocument.Parse(System.String)" data-throw-if-not-resolved="false"></xref>
+  remarks: >-
+    This method uses the <see cref="!:XmlReader.Create(string)" /> method to create
+
+    an <see cref="!:XmlReader" /> to read the raw XML into the underlying
+
+    XML tree.
+  example: []
+  syntax:
+    content: public static XDocument Load(string uri)
+    content.vb: Public Shared Function Load(uri As String) As XDocument
+    parameters:
+    - id: uri
+      type: System.String
+      description: A URI string referencing the file to load into a new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Xml.Linq.XDocument
+      description: >-
+        An <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> initialized with the contents of the file referenced
+
+        in the passed in uri parameter.
+- uid: System.Xml.Linq.XDocument.Load(System.String,System.Xml.Linq.LoadOptions)
+  id: Load(System.String,System.Xml.Linq.LoadOptions)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Load(String, LoadOptions)
+  fullName: System.Xml.Linq.XDocument.Load(System.String, System.Xml.Linq.LoadOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 213
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Create a new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> based on the contents of the file
+
+    referenced by the URI parameter passed in.  Optionally, whitespace can be preserved.
+
+    <see cref="!:XmlReader.Create(string)" />
+  remarks: >-
+    This method uses the <see cref="!:XmlReader.Create(string)" /> method to create
+
+    an <see cref="!:XmlReader" /> to read the raw XML into an underlying
+
+    XML tree.  If LoadOptions.PreserveWhitespace is enabled then
+
+    the <see cref="!:XmlReaderSettings" /> property <see cref="!:XmlReaderSettings.IgnoreWhitespace" />
+
+    is set to false.
+  example: []
+  syntax:
+    content: public static XDocument Load(string uri, LoadOptions options)
+    content.vb: Public Shared Function Load(uri As String, options As LoadOptions) As XDocument
+    parameters:
+    - id: uri
+      type: System.String
+      description: A string representing the URI of the file to be loaded into a new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref>.
+    - id: options
+      type: System.Xml.Linq.LoadOptions
+      description: A set of <xref href="System.Xml.Linq.LoadOptions" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Xml.Linq.XDocument
+      description: >-
+        An <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> initialized with the contents of the file referenced
+
+        in the passed uri parameter.  If LoadOptions.PreserveWhitespace is enabled then
+
+        all whitespace will be preserved.
+- uid: System.Xml.Linq.XDocument.Load(Stream)
+  id: Load(Stream)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Load(Stream)
+  fullName: System.Xml.Linq.XDocument.Load(Stream)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 235
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Create a new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> and initialize its underlying XML tree using
+
+    the passed <see cref="!:Stream" /> parameter.
+  example: []
+  syntax:
+    content: public static XDocument Load(Stream stream)
+    content.vb: Public Shared Function Load(stream As Stream) As XDocument
+    parameters:
+    - id: stream
+      type: Stream
+      description: >-
+        A <see cref="!:Stream" /> containing the raw XML to read into the newly
+
+        created <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Xml.Linq.XDocument
+      description: >-
+        A new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> containing the contents of the passed in
+
+        <see cref="!:Stream" />.
+- uid: System.Xml.Linq.XDocument.Load(Stream,System.Xml.Linq.LoadOptions)
+  id: Load(Stream,System.Xml.Linq.LoadOptions)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Load(Stream, LoadOptions)
+  fullName: System.Xml.Linq.XDocument.Load(Stream, System.Xml.Linq.LoadOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 261
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Create a new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> and initialize its underlying XML tree using
+
+    the passed <see cref="!:Stream" /> parameter.  Optionally whitespace handling
+
+    can be preserved.
+  remarks: >-
+    If LoadOptions.PreserveWhitespace is enabled then
+
+    the underlying <see cref="!:XmlReaderSettings" /> property <see cref="!:XmlReaderSettings.IgnoreWhitespace" />
+
+    is set to false.
+  example: []
+  syntax:
+    content: public static XDocument Load(Stream stream, LoadOptions options)
+    content.vb: Public Shared Function Load(stream As Stream, options As LoadOptions) As XDocument
+    parameters:
+    - id: stream
+      type: Stream
+      description: >-
+        A <see cref="!:Stream" /> containing the raw XML to read into the newly
+
+        created <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref>.
+    - id: options
+      type: System.Xml.Linq.LoadOptions
+      description: A set of <xref href="System.Xml.Linq.LoadOptions" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Xml.Linq.XDocument
+      description: >-
+        A new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> containing the contents of the passed in
+
+        <see cref="!:Stream" />.
+- uid: System.Xml.Linq.XDocument.Load(TextReader)
+  id: Load(TextReader)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Load(TextReader)
+  fullName: System.Xml.Linq.XDocument.Load(TextReader)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 282
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Create a new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> and initialize its underlying XML tree using
+
+    the passed <see cref="!:TextReader" /> parameter.
+  example: []
+  syntax:
+    content: public static XDocument Load(TextReader textReader)
+    content.vb: Public Shared Function Load(textReader As TextReader) As XDocument
+    parameters:
+    - id: textReader
+      type: TextReader
+      description: >-
+        A <see cref="!:TextReader" /> containing the raw XML to read into the newly
+
+        created <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Xml.Linq.XDocument
+      description: >-
+        A new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> containing the contents of the passed in
+
+        <see cref="!:TextReader" />.
+- uid: System.Xml.Linq.XDocument.Load(TextReader,System.Xml.Linq.LoadOptions)
+  id: Load(TextReader,System.Xml.Linq.LoadOptions)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Load(TextReader, LoadOptions)
+  fullName: System.Xml.Linq.XDocument.Load(TextReader, System.Xml.Linq.LoadOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 308
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Create a new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> and initialize its underlying XML tree using
+
+    the passed <see cref="!:TextReader" /> parameter.  Optionally whitespace handling
+
+    can be preserved.
+  remarks: >-
+    If LoadOptions.PreserveWhitespace is enabled then
+
+    the <see cref="!:XmlReaderSettings" /> property <see cref="!:XmlReaderSettings.IgnoreWhitespace" />
+
+    is set to false.
+  example: []
+  syntax:
+    content: public static XDocument Load(TextReader textReader, LoadOptions options)
+    content.vb: Public Shared Function Load(textReader As TextReader, options As LoadOptions) As XDocument
+    parameters:
+    - id: textReader
+      type: TextReader
+      description: >-
+        A <see cref="!:TextReader" /> containing the raw XML to read into the newly
+
+        created <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref>.
+    - id: options
+      type: System.Xml.Linq.LoadOptions
+      description: A set of <xref href="System.Xml.Linq.LoadOptions" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Xml.Linq.XDocument
+      description: >-
+        A new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> containing the contents of the passed in
+
+        <see cref="!:TextReader" />.
+- uid: System.Xml.Linq.XDocument.Load(XmlReader)
+  id: Load(XmlReader)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Load(XmlReader)
+  fullName: System.Xml.Linq.XDocument.Load(XmlReader)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 329
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Create a new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> containing the contents of the
+
+    passed in <see cref="!:XmlReader" />.
+  example: []
+  syntax:
+    content: public static XDocument Load(XmlReader reader)
+    content.vb: Public Shared Function Load(reader As XmlReader) As XDocument
+    parameters:
+    - id: reader
+      type: XmlReader
+      description: >-
+        An <see cref="!:XmlReader" /> containing the XML to be read into the new
+
+        <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Xml.Linq.XDocument
+      description: >-
+        A new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> containing the contents of the passed
+
+        in <see cref="!:XmlReader" />.
+- uid: System.Xml.Linq.XDocument.Load(XmlReader,System.Xml.Linq.LoadOptions)
+  id: Load(XmlReader,System.Xml.Linq.LoadOptions)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Load(XmlReader, LoadOptions)
+  fullName: System.Xml.Linq.XDocument.Load(XmlReader, System.Xml.Linq.LoadOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 349
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Create a new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> containing the contents of the
+
+    passed in <see cref="!:XmlReader" />.
+  example: []
+  syntax:
+    content: public static XDocument Load(XmlReader reader, LoadOptions options)
+    content.vb: Public Shared Function Load(reader As XmlReader, options As LoadOptions) As XDocument
+    parameters:
+    - id: reader
+      type: XmlReader
+      description: >-
+        An <see cref="!:XmlReader" /> containing the XML to be read into the new
+
+        <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref>.
+    - id: options
+      type: System.Xml.Linq.LoadOptions
+      description: A set of <xref href="System.Xml.Linq.LoadOptions" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Xml.Linq.XDocument
+      description: >-
+        A new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> containing the contents of the passed
+
+        in <see cref="!:XmlReader" />.
+- uid: System.Xml.Linq.XDocument.Parse(System.String)
+  id: Parse(System.String)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Parse(String)
+  fullName: System.Xml.Linq.XDocument.Parse(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 395
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Create a new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> from a string containing
+
+    XML.
+  example: []
+  syntax:
+    content: public static XDocument Parse(string text)
+    content.vb: Public Shared Function Parse(text As String) As XDocument
+    parameters:
+    - id: text
+      type: System.String
+      description: A string containing XML.
+    return:
+      type: System.Xml.Linq.XDocument
+      description: >-
+        An <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> containing an XML tree initialized from the
+
+        passed in XML string.
+- uid: System.Xml.Linq.XDocument.Parse(System.String,System.Xml.Linq.LoadOptions)
+  id: Parse(System.String,System.Xml.Linq.LoadOptions)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Parse(String, LoadOptions)
+  fullName: System.Xml.Linq.XDocument.Parse(System.String, System.Xml.Linq.LoadOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 422
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Create a new <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> from a string containing
+
+    XML.  Optionally whitespace can be preserved.
+  remarks: >-
+    This method uses <see cref="!:XmlReader.Create(TextReader, XmlReaderSettings)" />,
+
+    passing it a StringReader constructed from the passed in XML String. If
+
+    <xref href="System.Xml.Linq.LoadOptions.PreserveWhitespace" data-throw-if-not-resolved="false"></xref> is enabled then
+
+    <see cref="!:XmlReaderSettings.IgnoreWhitespace" /> is set to false. See
+
+    <see cref="!:XmlReaderSettings.IgnoreWhitespace" /> for more information on
+
+    whitespace handling.
+  example: []
+  syntax:
+    content: public static XDocument Parse(string text, LoadOptions options)
+    content.vb: Public Shared Function Parse(text As String, options As LoadOptions) As XDocument
+    parameters:
+    - id: text
+      type: System.String
+      description: A string containing XML.
+    - id: options
+      type: System.Xml.Linq.LoadOptions
+      description: A set of <xref href="System.Xml.Linq.LoadOptions" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Xml.Linq.XDocument
+      description: >-
+        An <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> containing an XML tree initialized from the
+
+        passed in XML string.
+- uid: System.Xml.Linq.XDocument.Save(Stream)
+  id: Save(Stream)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Save(Stream)
+  fullName: System.Xml.Linq.XDocument.Save(Stream)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 448
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Output this <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> to the passed in <see cref="!:Stream" />.
+  remarks: >-
+    The format will be indented by default.  If you want
+
+    no indenting then use the SaveOptions version of Save (see
+
+    <xref href="System.Xml.Linq.XDocument.Save(Stream,System.Xml.Linq.SaveOptions)" data-throw-if-not-resolved="false"></xref>) enabling
+
+    SaveOptions.DisableFormatting
+
+    There is also an option SaveOptions.OmitDuplicateNamespaces for removing duplicate namespace declarations.
+
+    Or instead use the SaveOptions as an annotation on this node or its ancestors, then this method will use those options.
+  example: []
+  syntax:
+    content: public void Save(Stream stream)
+    content.vb: Public Sub Save(stream As Stream)
+    parameters:
+    - id: stream
+      type: Stream
+      description: The <see cref="!:Stream" /> to output this <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> to.
+- uid: System.Xml.Linq.XDocument.Save(Stream,System.Xml.Linq.SaveOptions)
+  id: Save(Stream,System.Xml.Linq.SaveOptions)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Save(Stream, SaveOptions)
+  fullName: System.Xml.Linq.XDocument.Save(Stream, System.Xml.Linq.SaveOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 463
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Output this <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> to a <see cref="!:Stream" />.
+  example: []
+  syntax:
+    content: public void Save(Stream stream, SaveOptions options)
+    content.vb: Public Sub Save(stream As Stream, options As SaveOptions)
+    parameters:
+    - id: stream
+      type: Stream
+      description: The <see cref="!:Stream" /> to output the XML to.
+    - id: options
+      type: System.Xml.Linq.SaveOptions
+      description: >-
+        If SaveOptions.DisableFormatting is enabled the output is not indented.
+
+        If SaveOptions.OmitDuplicateNamespaces is enabled duplicate namespace declarations will be removed.
+- uid: System.Xml.Linq.XDocument.Save(TextWriter)
+  id: Save(TextWriter)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Save(TextWriter)
+  fullName: System.Xml.Linq.XDocument.Save(TextWriter)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 496
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Output this <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> to the passed in <see cref="!:TextWriter" />.
+  remarks: >-
+    The format will be indented by default.  If you want
+
+    no indenting then use the SaveOptions version of Save (see
+
+    <xref href="System.Xml.Linq.XDocument.Save(TextWriter,System.Xml.Linq.SaveOptions)" data-throw-if-not-resolved="false"></xref>) enabling
+
+    SaveOptions.DisableFormatting
+
+    There is also an option SaveOptions.OmitDuplicateNamespaces for removing duplicate namespace declarations.
+
+    Or instead use the SaveOptions as an annotation on this node or its ancestors, then this method will use those options.
+  example: []
+  syntax:
+    content: public void Save(TextWriter textWriter)
+    content.vb: Public Sub Save(textWriter As TextWriter)
+    parameters:
+    - id: textWriter
+      type: TextWriter
+      description: The <see cref="!:TextWriter" /> to output this <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> to.
+- uid: System.Xml.Linq.XDocument.Save(TextWriter,System.Xml.Linq.SaveOptions)
+  id: Save(TextWriter,System.Xml.Linq.SaveOptions)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Save(TextWriter, SaveOptions)
+  fullName: System.Xml.Linq.XDocument.Save(TextWriter, System.Xml.Linq.SaveOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 511
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Output this <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> to a <see cref="!:TextWriter" />.
+  example: []
+  syntax:
+    content: public void Save(TextWriter textWriter, SaveOptions options)
+    content.vb: Public Sub Save(textWriter As TextWriter, options As SaveOptions)
+    parameters:
+    - id: textWriter
+      type: TextWriter
+      description: The <see cref="!:TextWriter" /> to output the XML to.
+    - id: options
+      type: System.Xml.Linq.SaveOptions
+      description: >-
+        If SaveOptions.DisableFormatting is enabled the output is not indented.
+
+        If SaveOptions.OmitDuplicateNamespaces is enabled duplicate namespace declarations will be removed.
+- uid: System.Xml.Linq.XDocument.Save(XmlWriter)
+  id: Save(XmlWriter)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: Save(XmlWriter)
+  fullName: System.Xml.Linq.XDocument.Save(XmlWriter)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 526
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Output this <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref> to an <see cref="!:XmlWriter" />.
+  example: []
+  syntax:
+    content: public void Save(XmlWriter writer)
+    content.vb: Public Sub Save(writer As XmlWriter)
+    parameters:
+    - id: writer
+      type: XmlWriter
+      description: The <see cref="!:XmlWriter" /> to output the XML to.
+- uid: System.Xml.Linq.XDocument.WriteTo(XmlWriter)
+  id: WriteTo(XmlWriter)
+  parent: System.Xml.Linq.XDocument
+  langs:
+  - csharp
+  - vb
+  name: WriteTo(XmlWriter)
+  fullName: System.Xml.Linq.XDocument.WriteTo(XmlWriter)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDocument.cs
+    startLine: 541
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Output this <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref>'s underlying XML tree to the
+
+    passed in <see cref="!:XmlWriter" />.
+
+    <xref href="System.Xml.Linq.XDocument.Save(XmlWriter)" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public override void WriteTo(XmlWriter writer)
+    content.vb: Public Overrides Sub WriteTo(writer As XmlWriter)
+    parameters:
+    - id: writer
+      type: XmlWriter
+      description: >-
+        The <see cref="!:XmlWriter" /> to output the content of this
+
+        <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref>.
+  overridden: System.Xml.Linq.XNode.WriteTo(XmlWriter)
+references:
+- uid: System.Xml.Linq.XDocument
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XDocument
+  fullName: System.Xml.Linq.XDocument
+- uid: System.Xml.Linq.XDocumentType
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XDocumentType
+  fullName: System.Xml.Linq.XDocumentType
+- uid: System.Xml.Linq.XComment
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XComment
+  fullName: System.Xml.Linq.XComment
+- uid: System.Xml.Linq.XProcessingInstruction
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XProcessingInstruction
+  fullName: System.Xml.Linq.XProcessingInstruction
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq
+- uid: System.Object
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Xml.Linq.XObject
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XObject
+  fullName: System.Xml.Linq.XObject
+- uid: System.Xml.Linq.XNode
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XNode
+  fullName: System.Xml.Linq.XNode
+- uid: System.Xml.Linq.XContainer
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XContainer
+  fullName: System.Xml.Linq.XContainer
+- uid: System.Xml.Linq.XContainer.FirstNode
+  parent: System.Xml.Linq.XContainer
+  isExternal: false
+  name: FirstNode
+  fullName: System.Xml.Linq.XContainer.FirstNode
+- uid: System.Xml.Linq.XContainer.LastNode
+  parent: System.Xml.Linq.XContainer
+  isExternal: false
+  name: LastNode
+  fullName: System.Xml.Linq.XContainer.LastNode
+- uid: System.Xml.Linq.XContainer.Add(System.Object)
+  parent: System.Xml.Linq.XContainer
+  isExternal: true
+  name: Add(Object)
+  fullName: System.Xml.Linq.XContainer.Add(System.Object)
+  spec.csharp:
+  - uid: System.Xml.Linq.XContainer.Add(System.Object)
+    name: Add
+    fullName: System.Xml.Linq.XContainer.Add
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XContainer.Add(System.Object)
+    name: Add
+    fullName: System.Xml.Linq.XContainer.Add
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XContainer.Add(System.Object[])
+  parent: System.Xml.Linq.XContainer
+  isExternal: true
+  name: Add(Object[])
+  fullName: System.Xml.Linq.XContainer.Add(System.Object[])
+  fullname.vb: System.Xml.Linq.XContainer.Add(System.Object())
+  name.vb: Add(Object())
+  spec.csharp:
+  - uid: System.Xml.Linq.XContainer.Add(System.Object[])
+    name: Add
+    fullName: System.Xml.Linq.XContainer.Add
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XContainer.Add(System.Object[])
+    name: Add
+    fullName: System.Xml.Linq.XContainer.Add
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XContainer.AddFirst(System.Object)
+  parent: System.Xml.Linq.XContainer
+  isExternal: true
+  name: AddFirst(Object)
+  fullName: System.Xml.Linq.XContainer.AddFirst(System.Object)
+  spec.csharp:
+  - uid: System.Xml.Linq.XContainer.AddFirst(System.Object)
+    name: AddFirst
+    fullName: System.Xml.Linq.XContainer.AddFirst
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XContainer.AddFirst(System.Object)
+    name: AddFirst
+    fullName: System.Xml.Linq.XContainer.AddFirst
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XContainer.AddFirst(System.Object[])
+  parent: System.Xml.Linq.XContainer
+  isExternal: true
+  name: AddFirst(Object[])
+  fullName: System.Xml.Linq.XContainer.AddFirst(System.Object[])
+  fullname.vb: System.Xml.Linq.XContainer.AddFirst(System.Object())
+  name.vb: AddFirst(Object())
+  spec.csharp:
+  - uid: System.Xml.Linq.XContainer.AddFirst(System.Object[])
+    name: AddFirst
+    fullName: System.Xml.Linq.XContainer.AddFirst
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XContainer.AddFirst(System.Object[])
+    name: AddFirst
+    fullName: System.Xml.Linq.XContainer.AddFirst
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XContainer.CreateWriter
+  parent: System.Xml.Linq.XContainer
+  isExternal: false
+  name: CreateWriter()
+  fullName: System.Xml.Linq.XContainer.CreateWriter()
+  spec.csharp:
+  - uid: System.Xml.Linq.XContainer.CreateWriter
+    name: CreateWriter
+    fullName: System.Xml.Linq.XContainer.CreateWriter
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XContainer.CreateWriter
+    name: CreateWriter
+    fullName: System.Xml.Linq.XContainer.CreateWriter
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XContainer.DescendantNodes
+  parent: System.Xml.Linq.XContainer
+  isExternal: false
+  name: DescendantNodes()
+  fullName: System.Xml.Linq.XContainer.DescendantNodes()
+  spec.csharp:
+  - uid: System.Xml.Linq.XContainer.DescendantNodes
+    name: DescendantNodes
+    fullName: System.Xml.Linq.XContainer.DescendantNodes
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XContainer.DescendantNodes
+    name: DescendantNodes
+    fullName: System.Xml.Linq.XContainer.DescendantNodes
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XContainer.Descendants
+  parent: System.Xml.Linq.XContainer
+  isExternal: false
+  name: Descendants()
+  fullName: System.Xml.Linq.XContainer.Descendants()
+  spec.csharp:
+  - uid: System.Xml.Linq.XContainer.Descendants
+    name: Descendants
+    fullName: System.Xml.Linq.XContainer.Descendants
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XContainer.Descendants
+    name: Descendants
+    fullName: System.Xml.Linq.XContainer.Descendants
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XContainer.Descendants(System.Xml.Linq.XName)
+  parent: System.Xml.Linq.XContainer
+  isExternal: false
+  name: Descendants(XName)
+  fullName: System.Xml.Linq.XContainer.Descendants(System.Xml.Linq.XName)
+  spec.csharp:
+  - uid: System.Xml.Linq.XContainer.Descendants(System.Xml.Linq.XName)
+    name: Descendants
+    fullName: System.Xml.Linq.XContainer.Descendants
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XName
+    name: XName
+    fullName: System.Xml.Linq.XName
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XContainer.Descendants(System.Xml.Linq.XName)
+    name: Descendants
+    fullName: System.Xml.Linq.XContainer.Descendants
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XName
+    name: XName
+    fullName: System.Xml.Linq.XName
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)
+  parent: System.Xml.Linq.XContainer
+  isExternal: false
+  name: Element(XName)
+  fullName: System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)
+  spec.csharp:
+  - uid: System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)
+    name: Element
+    fullName: System.Xml.Linq.XContainer.Element
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XName
+    name: XName
+    fullName: System.Xml.Linq.XName
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XContainer.Element(System.Xml.Linq.XName)
+    name: Element
+    fullName: System.Xml.Linq.XContainer.Element
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XName
+    name: XName
+    fullName: System.Xml.Linq.XName
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XContainer.Elements
+  parent: System.Xml.Linq.XContainer
+  isExternal: false
+  name: Elements()
+  fullName: System.Xml.Linq.XContainer.Elements()
+  spec.csharp:
+  - uid: System.Xml.Linq.XContainer.Elements
+    name: Elements
+    fullName: System.Xml.Linq.XContainer.Elements
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XContainer.Elements
+    name: Elements
+    fullName: System.Xml.Linq.XContainer.Elements
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XContainer.Elements(System.Xml.Linq.XName)
+  parent: System.Xml.Linq.XContainer
+  isExternal: false
+  name: Elements(XName)
+  fullName: System.Xml.Linq.XContainer.Elements(System.Xml.Linq.XName)
+  spec.csharp:
+  - uid: System.Xml.Linq.XContainer.Elements(System.Xml.Linq.XName)
+    name: Elements
+    fullName: System.Xml.Linq.XContainer.Elements
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XName
+    name: XName
+    fullName: System.Xml.Linq.XName
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XContainer.Elements(System.Xml.Linq.XName)
+    name: Elements
+    fullName: System.Xml.Linq.XContainer.Elements
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XName
+    name: XName
+    fullName: System.Xml.Linq.XName
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XContainer.Nodes
+  parent: System.Xml.Linq.XContainer
+  isExternal: false
+  name: Nodes()
+  fullName: System.Xml.Linq.XContainer.Nodes()
+  spec.csharp:
+  - uid: System.Xml.Linq.XContainer.Nodes
+    name: Nodes
+    fullName: System.Xml.Linq.XContainer.Nodes
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XContainer.Nodes
+    name: Nodes
+    fullName: System.Xml.Linq.XContainer.Nodes
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XContainer.RemoveNodes
+  parent: System.Xml.Linq.XContainer
+  isExternal: false
+  name: RemoveNodes()
+  fullName: System.Xml.Linq.XContainer.RemoveNodes()
+  spec.csharp:
+  - uid: System.Xml.Linq.XContainer.RemoveNodes
+    name: RemoveNodes
+    fullName: System.Xml.Linq.XContainer.RemoveNodes
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XContainer.RemoveNodes
+    name: RemoveNodes
+    fullName: System.Xml.Linq.XContainer.RemoveNodes
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XContainer.ReplaceNodes(System.Object)
+  parent: System.Xml.Linq.XContainer
+  isExternal: true
+  name: ReplaceNodes(Object)
+  fullName: System.Xml.Linq.XContainer.ReplaceNodes(System.Object)
+  spec.csharp:
+  - uid: System.Xml.Linq.XContainer.ReplaceNodes(System.Object)
+    name: ReplaceNodes
+    fullName: System.Xml.Linq.XContainer.ReplaceNodes
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XContainer.ReplaceNodes(System.Object)
+    name: ReplaceNodes
+    fullName: System.Xml.Linq.XContainer.ReplaceNodes
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XContainer.ReplaceNodes(System.Object[])
+  parent: System.Xml.Linq.XContainer
+  isExternal: true
+  name: ReplaceNodes(Object[])
+  fullName: System.Xml.Linq.XContainer.ReplaceNodes(System.Object[])
+  fullname.vb: System.Xml.Linq.XContainer.ReplaceNodes(System.Object())
+  name.vb: ReplaceNodes(Object())
+  spec.csharp:
+  - uid: System.Xml.Linq.XContainer.ReplaceNodes(System.Object[])
+    name: ReplaceNodes
+    fullName: System.Xml.Linq.XContainer.ReplaceNodes
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XContainer.ReplaceNodes(System.Object[])
+    name: ReplaceNodes
+    fullName: System.Xml.Linq.XContainer.ReplaceNodes
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.NextNode
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: NextNode
+  fullName: System.Xml.Linq.XNode.NextNode
+- uid: System.Xml.Linq.XNode.PreviousNode
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: PreviousNode
+  fullName: System.Xml.Linq.XNode.PreviousNode
+- uid: System.Xml.Linq.XNode.DocumentOrderComparer
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: DocumentOrderComparer
+  fullName: System.Xml.Linq.XNode.DocumentOrderComparer
+- uid: System.Xml.Linq.XNode.EqualityComparer
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: EqualityComparer
+  fullName: System.Xml.Linq.XNode.EqualityComparer
+- uid: System.Xml.Linq.XNode.AddAfterSelf(System.Object)
+  parent: System.Xml.Linq.XNode
+  isExternal: true
+  name: AddAfterSelf(Object)
+  fullName: System.Xml.Linq.XNode.AddAfterSelf(System.Object)
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.AddAfterSelf(System.Object)
+    name: AddAfterSelf
+    fullName: System.Xml.Linq.XNode.AddAfterSelf
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.AddAfterSelf(System.Object)
+    name: AddAfterSelf
+    fullName: System.Xml.Linq.XNode.AddAfterSelf
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.AddAfterSelf(System.Object[])
+  parent: System.Xml.Linq.XNode
+  isExternal: true
+  name: AddAfterSelf(Object[])
+  fullName: System.Xml.Linq.XNode.AddAfterSelf(System.Object[])
+  fullname.vb: System.Xml.Linq.XNode.AddAfterSelf(System.Object())
+  name.vb: AddAfterSelf(Object())
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.AddAfterSelf(System.Object[])
+    name: AddAfterSelf
+    fullName: System.Xml.Linq.XNode.AddAfterSelf
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.AddAfterSelf(System.Object[])
+    name: AddAfterSelf
+    fullName: System.Xml.Linq.XNode.AddAfterSelf
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.AddBeforeSelf(System.Object)
+  parent: System.Xml.Linq.XNode
+  isExternal: true
+  name: AddBeforeSelf(Object)
+  fullName: System.Xml.Linq.XNode.AddBeforeSelf(System.Object)
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.AddBeforeSelf(System.Object)
+    name: AddBeforeSelf
+    fullName: System.Xml.Linq.XNode.AddBeforeSelf
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.AddBeforeSelf(System.Object)
+    name: AddBeforeSelf
+    fullName: System.Xml.Linq.XNode.AddBeforeSelf
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.AddBeforeSelf(System.Object[])
+  parent: System.Xml.Linq.XNode
+  isExternal: true
+  name: AddBeforeSelf(Object[])
+  fullName: System.Xml.Linq.XNode.AddBeforeSelf(System.Object[])
+  fullname.vb: System.Xml.Linq.XNode.AddBeforeSelf(System.Object())
+  name.vb: AddBeforeSelf(Object())
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.AddBeforeSelf(System.Object[])
+    name: AddBeforeSelf
+    fullName: System.Xml.Linq.XNode.AddBeforeSelf
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.AddBeforeSelf(System.Object[])
+    name: AddBeforeSelf
+    fullName: System.Xml.Linq.XNode.AddBeforeSelf
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.Ancestors
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: Ancestors()
+  fullName: System.Xml.Linq.XNode.Ancestors()
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.Ancestors
+    name: Ancestors
+    fullName: System.Xml.Linq.XNode.Ancestors
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.Ancestors
+    name: Ancestors
+    fullName: System.Xml.Linq.XNode.Ancestors
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.Ancestors(System.Xml.Linq.XName)
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: Ancestors(XName)
+  fullName: System.Xml.Linq.XNode.Ancestors(System.Xml.Linq.XName)
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.Ancestors(System.Xml.Linq.XName)
+    name: Ancestors
+    fullName: System.Xml.Linq.XNode.Ancestors
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XName
+    name: XName
+    fullName: System.Xml.Linq.XName
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.Ancestors(System.Xml.Linq.XName)
+    name: Ancestors
+    fullName: System.Xml.Linq.XNode.Ancestors
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XName
+    name: XName
+    fullName: System.Xml.Linq.XName
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.CompareDocumentOrder(System.Xml.Linq.XNode,System.Xml.Linq.XNode)
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: CompareDocumentOrder(XNode, XNode)
+  fullName: System.Xml.Linq.XNode.CompareDocumentOrder(System.Xml.Linq.XNode, System.Xml.Linq.XNode)
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.CompareDocumentOrder(System.Xml.Linq.XNode,System.Xml.Linq.XNode)
+    name: CompareDocumentOrder
+    fullName: System.Xml.Linq.XNode.CompareDocumentOrder
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XNode
+    name: XNode
+    fullName: System.Xml.Linq.XNode
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.Linq.XNode
+    name: XNode
+    fullName: System.Xml.Linq.XNode
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.CompareDocumentOrder(System.Xml.Linq.XNode,System.Xml.Linq.XNode)
+    name: CompareDocumentOrder
+    fullName: System.Xml.Linq.XNode.CompareDocumentOrder
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XNode
+    name: XNode
+    fullName: System.Xml.Linq.XNode
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.Linq.XNode
+    name: XNode
+    fullName: System.Xml.Linq.XNode
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.CreateReader
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: CreateReader()
+  fullName: System.Xml.Linq.XNode.CreateReader()
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.CreateReader
+    name: CreateReader
+    fullName: System.Xml.Linq.XNode.CreateReader
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.CreateReader
+    name: CreateReader
+    fullName: System.Xml.Linq.XNode.CreateReader
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.CreateReader(System.Xml.Linq.ReaderOptions)
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: CreateReader(ReaderOptions)
+  fullName: System.Xml.Linq.XNode.CreateReader(System.Xml.Linq.ReaderOptions)
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.CreateReader(System.Xml.Linq.ReaderOptions)
+    name: CreateReader
+    fullName: System.Xml.Linq.XNode.CreateReader
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.ReaderOptions
+    name: ReaderOptions
+    fullName: System.Xml.Linq.ReaderOptions
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.CreateReader(System.Xml.Linq.ReaderOptions)
+    name: CreateReader
+    fullName: System.Xml.Linq.XNode.CreateReader
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.ReaderOptions
+    name: ReaderOptions
+    fullName: System.Xml.Linq.ReaderOptions
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.NodesAfterSelf
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: NodesAfterSelf()
+  fullName: System.Xml.Linq.XNode.NodesAfterSelf()
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.NodesAfterSelf
+    name: NodesAfterSelf
+    fullName: System.Xml.Linq.XNode.NodesAfterSelf
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.NodesAfterSelf
+    name: NodesAfterSelf
+    fullName: System.Xml.Linq.XNode.NodesAfterSelf
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.NodesBeforeSelf
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: NodesBeforeSelf()
+  fullName: System.Xml.Linq.XNode.NodesBeforeSelf()
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.NodesBeforeSelf
+    name: NodesBeforeSelf
+    fullName: System.Xml.Linq.XNode.NodesBeforeSelf
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.NodesBeforeSelf
+    name: NodesBeforeSelf
+    fullName: System.Xml.Linq.XNode.NodesBeforeSelf
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.ElementsAfterSelf
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: ElementsAfterSelf()
+  fullName: System.Xml.Linq.XNode.ElementsAfterSelf()
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.ElementsAfterSelf
+    name: ElementsAfterSelf
+    fullName: System.Xml.Linq.XNode.ElementsAfterSelf
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.ElementsAfterSelf
+    name: ElementsAfterSelf
+    fullName: System.Xml.Linq.XNode.ElementsAfterSelf
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.ElementsAfterSelf(System.Xml.Linq.XName)
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: ElementsAfterSelf(XName)
+  fullName: System.Xml.Linq.XNode.ElementsAfterSelf(System.Xml.Linq.XName)
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.ElementsAfterSelf(System.Xml.Linq.XName)
+    name: ElementsAfterSelf
+    fullName: System.Xml.Linq.XNode.ElementsAfterSelf
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XName
+    name: XName
+    fullName: System.Xml.Linq.XName
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.ElementsAfterSelf(System.Xml.Linq.XName)
+    name: ElementsAfterSelf
+    fullName: System.Xml.Linq.XNode.ElementsAfterSelf
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XName
+    name: XName
+    fullName: System.Xml.Linq.XName
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.ElementsBeforeSelf
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: ElementsBeforeSelf()
+  fullName: System.Xml.Linq.XNode.ElementsBeforeSelf()
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.ElementsBeforeSelf
+    name: ElementsBeforeSelf
+    fullName: System.Xml.Linq.XNode.ElementsBeforeSelf
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.ElementsBeforeSelf
+    name: ElementsBeforeSelf
+    fullName: System.Xml.Linq.XNode.ElementsBeforeSelf
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.ElementsBeforeSelf(System.Xml.Linq.XName)
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: ElementsBeforeSelf(XName)
+  fullName: System.Xml.Linq.XNode.ElementsBeforeSelf(System.Xml.Linq.XName)
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.ElementsBeforeSelf(System.Xml.Linq.XName)
+    name: ElementsBeforeSelf
+    fullName: System.Xml.Linq.XNode.ElementsBeforeSelf
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XName
+    name: XName
+    fullName: System.Xml.Linq.XName
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.ElementsBeforeSelf(System.Xml.Linq.XName)
+    name: ElementsBeforeSelf
+    fullName: System.Xml.Linq.XNode.ElementsBeforeSelf
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XName
+    name: XName
+    fullName: System.Xml.Linq.XName
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.IsAfter(System.Xml.Linq.XNode)
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: IsAfter(XNode)
+  fullName: System.Xml.Linq.XNode.IsAfter(System.Xml.Linq.XNode)
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.IsAfter(System.Xml.Linq.XNode)
+    name: IsAfter
+    fullName: System.Xml.Linq.XNode.IsAfter
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XNode
+    name: XNode
+    fullName: System.Xml.Linq.XNode
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.IsAfter(System.Xml.Linq.XNode)
+    name: IsAfter
+    fullName: System.Xml.Linq.XNode.IsAfter
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XNode
+    name: XNode
+    fullName: System.Xml.Linq.XNode
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.IsBefore(System.Xml.Linq.XNode)
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: IsBefore(XNode)
+  fullName: System.Xml.Linq.XNode.IsBefore(System.Xml.Linq.XNode)
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.IsBefore(System.Xml.Linq.XNode)
+    name: IsBefore
+    fullName: System.Xml.Linq.XNode.IsBefore
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XNode
+    name: XNode
+    fullName: System.Xml.Linq.XNode
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.IsBefore(System.Xml.Linq.XNode)
+    name: IsBefore
+    fullName: System.Xml.Linq.XNode.IsBefore
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XNode
+    name: XNode
+    fullName: System.Xml.Linq.XNode
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.ReadFrom(XmlReader)
+  parent: System.Xml.Linq.XNode
+  isExternal: true
+  name: ReadFrom(XmlReader)
+  fullName: System.Xml.Linq.XNode.ReadFrom(XmlReader)
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.ReadFrom(XmlReader)
+    name: ReadFrom
+    fullName: System.Xml.Linq.XNode.ReadFrom
+  - name: (
+    fullName: (
+  - uid: XmlReader
+    name: XmlReader
+    fullName: XmlReader
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.ReadFrom(XmlReader)
+    name: ReadFrom
+    fullName: System.Xml.Linq.XNode.ReadFrom
+  - name: (
+    fullName: (
+  - uid: XmlReader
+    name: XmlReader
+    fullName: XmlReader
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.Remove
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: Remove()
+  fullName: System.Xml.Linq.XNode.Remove()
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.Remove
+    name: Remove
+    fullName: System.Xml.Linq.XNode.Remove
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.Remove
+    name: Remove
+    fullName: System.Xml.Linq.XNode.Remove
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.ReplaceWith(System.Object)
+  parent: System.Xml.Linq.XNode
+  isExternal: true
+  name: ReplaceWith(Object)
+  fullName: System.Xml.Linq.XNode.ReplaceWith(System.Object)
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.ReplaceWith(System.Object)
+    name: ReplaceWith
+    fullName: System.Xml.Linq.XNode.ReplaceWith
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.ReplaceWith(System.Object)
+    name: ReplaceWith
+    fullName: System.Xml.Linq.XNode.ReplaceWith
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.ReplaceWith(System.Object[])
+  parent: System.Xml.Linq.XNode
+  isExternal: true
+  name: ReplaceWith(Object[])
+  fullName: System.Xml.Linq.XNode.ReplaceWith(System.Object[])
+  fullname.vb: System.Xml.Linq.XNode.ReplaceWith(System.Object())
+  name.vb: ReplaceWith(Object())
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.ReplaceWith(System.Object[])
+    name: ReplaceWith
+    fullName: System.Xml.Linq.XNode.ReplaceWith
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.ReplaceWith(System.Object[])
+    name: ReplaceWith
+    fullName: System.Xml.Linq.XNode.ReplaceWith
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.ToString
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: ToString()
+  fullName: System.Xml.Linq.XNode.ToString()
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.ToString
+    name: ToString
+    fullName: System.Xml.Linq.XNode.ToString
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.ToString
+    name: ToString
+    fullName: System.Xml.Linq.XNode.ToString
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.ToString(System.Xml.Linq.SaveOptions)
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: ToString(SaveOptions)
+  fullName: System.Xml.Linq.XNode.ToString(System.Xml.Linq.SaveOptions)
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.ToString(System.Xml.Linq.SaveOptions)
+    name: ToString
+    fullName: System.Xml.Linq.XNode.ToString
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.SaveOptions
+    name: SaveOptions
+    fullName: System.Xml.Linq.SaveOptions
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.ToString(System.Xml.Linq.SaveOptions)
+    name: ToString
+    fullName: System.Xml.Linq.XNode.ToString
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.SaveOptions
+    name: SaveOptions
+    fullName: System.Xml.Linq.SaveOptions
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode.DeepEquals(System.Xml.Linq.XNode,System.Xml.Linq.XNode)
+  parent: System.Xml.Linq.XNode
+  isExternal: false
+  name: DeepEquals(XNode, XNode)
+  fullName: System.Xml.Linq.XNode.DeepEquals(System.Xml.Linq.XNode, System.Xml.Linq.XNode)
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.DeepEquals(System.Xml.Linq.XNode,System.Xml.Linq.XNode)
+    name: DeepEquals
+    fullName: System.Xml.Linq.XNode.DeepEquals
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XNode
+    name: XNode
+    fullName: System.Xml.Linq.XNode
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.Linq.XNode
+    name: XNode
+    fullName: System.Xml.Linq.XNode
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.DeepEquals(System.Xml.Linq.XNode,System.Xml.Linq.XNode)
+    name: DeepEquals
+    fullName: System.Xml.Linq.XNode.DeepEquals
+  - name: (
+    fullName: (
+  - uid: System.Xml.Linq.XNode
+    name: XNode
+    fullName: System.Xml.Linq.XNode
+  - name: ', '
+    fullName: ', '
+  - uid: System.Xml.Linq.XNode
+    name: XNode
+    fullName: System.Xml.Linq.XNode
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XObject.BaseUri
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: BaseUri
+  fullName: System.Xml.Linq.XObject.BaseUri
+- uid: System.Xml.Linq.XObject.Document
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: Document
+  fullName: System.Xml.Linq.XObject.Document
+- uid: System.Xml.Linq.XObject.Parent
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: Parent
+  fullName: System.Xml.Linq.XObject.Parent
+- uid: System.Xml.Linq.XObject.AddAnnotation(System.Object)
+  parent: System.Xml.Linq.XObject
+  isExternal: true
+  name: AddAnnotation(Object)
+  fullName: System.Xml.Linq.XObject.AddAnnotation(System.Object)
+  spec.csharp:
+  - uid: System.Xml.Linq.XObject.AddAnnotation(System.Object)
+    name: AddAnnotation
+    fullName: System.Xml.Linq.XObject.AddAnnotation
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XObject.AddAnnotation(System.Object)
+    name: AddAnnotation
+    fullName: System.Xml.Linq.XObject.AddAnnotation
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XObject.Annotation(Type)
+  parent: System.Xml.Linq.XObject
+  isExternal: true
+  name: Annotation(Type)
+  fullName: System.Xml.Linq.XObject.Annotation(Type)
+  spec.csharp:
+  - uid: System.Xml.Linq.XObject.Annotation(Type)
+    name: Annotation
+    fullName: System.Xml.Linq.XObject.Annotation
+  - name: (
+    fullName: (
+  - uid: Type
+    name: Type
+    fullName: Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XObject.Annotation(Type)
+    name: Annotation
+    fullName: System.Xml.Linq.XObject.Annotation
+  - name: (
+    fullName: (
+  - uid: Type
+    name: Type
+    fullName: Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XObject.Annotation``1
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: Annotation<T>()
+  fullName: System.Xml.Linq.XObject.Annotation<T>()
+  fullname.vb: System.Xml.Linq.XObject.Annotation(Of T)()
+  name.vb: Annotation(Of T)()
+  spec.csharp:
+  - uid: System.Xml.Linq.XObject.Annotation``1
+    name: Annotation<T>
+    fullName: System.Xml.Linq.XObject.Annotation<T>
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XObject.Annotation``1
+    name: Annotation(Of T)
+    fullName: System.Xml.Linq.XObject.Annotation(Of T)
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XObject.Annotations(Type)
+  parent: System.Xml.Linq.XObject
+  isExternal: true
+  name: Annotations(Type)
+  fullName: System.Xml.Linq.XObject.Annotations(Type)
+  spec.csharp:
+  - uid: System.Xml.Linq.XObject.Annotations(Type)
+    name: Annotations
+    fullName: System.Xml.Linq.XObject.Annotations
+  - name: (
+    fullName: (
+  - uid: Type
+    name: Type
+    fullName: Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XObject.Annotations(Type)
+    name: Annotations
+    fullName: System.Xml.Linq.XObject.Annotations
+  - name: (
+    fullName: (
+  - uid: Type
+    name: Type
+    fullName: Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XObject.Annotations``1
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: Annotations<T>()
+  fullName: System.Xml.Linq.XObject.Annotations<T>()
+  fullname.vb: System.Xml.Linq.XObject.Annotations(Of T)()
+  name.vb: Annotations(Of T)()
+  spec.csharp:
+  - uid: System.Xml.Linq.XObject.Annotations``1
+    name: Annotations<T>
+    fullName: System.Xml.Linq.XObject.Annotations<T>
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XObject.Annotations``1
+    name: Annotations(Of T)
+    fullName: System.Xml.Linq.XObject.Annotations(Of T)
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XObject.RemoveAnnotations(Type)
+  parent: System.Xml.Linq.XObject
+  isExternal: true
+  name: RemoveAnnotations(Type)
+  fullName: System.Xml.Linq.XObject.RemoveAnnotations(Type)
+  spec.csharp:
+  - uid: System.Xml.Linq.XObject.RemoveAnnotations(Type)
+    name: RemoveAnnotations
+    fullName: System.Xml.Linq.XObject.RemoveAnnotations
+  - name: (
+    fullName: (
+  - uid: Type
+    name: Type
+    fullName: Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XObject.RemoveAnnotations(Type)
+    name: RemoveAnnotations
+    fullName: System.Xml.Linq.XObject.RemoveAnnotations
+  - name: (
+    fullName: (
+  - uid: Type
+    name: Type
+    fullName: Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XObject.RemoveAnnotations``1
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: RemoveAnnotations<T>()
+  fullName: System.Xml.Linq.XObject.RemoveAnnotations<T>()
+  fullname.vb: System.Xml.Linq.XObject.RemoveAnnotations(Of T)()
+  name.vb: RemoveAnnotations(Of T)()
+  spec.csharp:
+  - uid: System.Xml.Linq.XObject.RemoveAnnotations``1
+    name: RemoveAnnotations<T>
+    fullName: System.Xml.Linq.XObject.RemoveAnnotations<T>
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XObject.RemoveAnnotations``1
+    name: RemoveAnnotations(Of T)
+    fullName: System.Xml.Linq.XObject.RemoveAnnotations(Of T)
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XObject.Changed
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: Changed
+  fullName: System.Xml.Linq.XObject.Changed
+- uid: System.Xml.Linq.XObject.Changing
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: Changing
+  fullName: System.Xml.Linq.XObject.Changing
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  fullName: System.Object[]
+  fullname.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: System.Xml.Linq.XDeclaration
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XDeclaration
+  fullName: System.Xml.Linq.XDeclaration
+- uid: System.Xml.Linq.XObject.NodeType
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: NodeType
+  fullName: System.Xml.Linq.XObject.NodeType
+- uid: XmlNodeType
+  isExternal: true
+  name: XmlNodeType
+  fullName: XmlNodeType
+- uid: System.Xml.Linq.XElement
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XElement
+  fullName: System.Xml.Linq.XElement
+- uid: System.Xml.Linq.XDocument.Parse(System.String)
+- uid: System.String
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Xml.Linq.LoadOptions
+  parent: System.Xml.Linq
+  isExternal: false
+  name: LoadOptions
+  fullName: System.Xml.Linq.LoadOptions
+- uid: Stream
+  isExternal: true
+  name: Stream
+  fullName: Stream
+- uid: TextReader
+  isExternal: true
+  name: TextReader
+  fullName: TextReader
+- uid: XmlReader
+  isExternal: true
+  name: XmlReader
+  fullName: XmlReader
+- uid: System.Xml.Linq.LoadOptions.PreserveWhitespace
+- uid: System.Xml.Linq.XDocument.Save(Stream,System.Xml.Linq.SaveOptions)
+- uid: System.Xml.Linq.SaveOptions
+  parent: System.Xml.Linq
+  isExternal: false
+  name: SaveOptions
+  fullName: System.Xml.Linq.SaveOptions
+- uid: System.Xml.Linq.XDocument.Save(TextWriter,System.Xml.Linq.SaveOptions)
+- uid: TextWriter
+  isExternal: true
+  name: TextWriter
+  fullName: TextWriter
+- uid: XmlWriter
+  isExternal: true
+  name: XmlWriter
+  fullName: XmlWriter
+- uid: System.Xml.Linq.XDocument.Save(XmlWriter)
+- uid: System.Xml.Linq.XNode.WriteTo(XmlWriter)
+  parent: System.Xml.Linq.XNode
+  isExternal: true
+  name: WriteTo(XmlWriter)
+  fullName: System.Xml.Linq.XNode.WriteTo(XmlWriter)
+  spec.csharp:
+  - uid: System.Xml.Linq.XNode.WriteTo(XmlWriter)
+    name: WriteTo
+    fullName: System.Xml.Linq.XNode.WriteTo
+  - name: (
+    fullName: (
+  - uid: XmlWriter
+    name: XmlWriter
+    fullName: XmlWriter
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XNode.WriteTo(XmlWriter)
+    name: WriteTo
+    fullName: System.Xml.Linq.XNode.WriteTo
+  - name: (
+    fullName: (
+  - uid: XmlWriter
+    name: XmlWriter
+    fullName: XmlWriter
+    isExternal: true
+  - name: )
+    fullName: )

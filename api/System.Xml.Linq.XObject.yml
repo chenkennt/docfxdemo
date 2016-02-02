@@ -1,0 +1,553 @@
+items:
+- uid: System.Xml.Linq.XObject
+  id: XObject
+  parent: System.Xml.Linq
+  children:
+  - System.Xml.Linq.XObject.AddAnnotation(System.Object)
+  - System.Xml.Linq.XObject.Annotation(Type)
+  - System.Xml.Linq.XObject.Annotation``1
+  - System.Xml.Linq.XObject.Annotations(Type)
+  - System.Xml.Linq.XObject.Annotations``1
+  - System.Xml.Linq.XObject.BaseUri
+  - System.Xml.Linq.XObject.Changed
+  - System.Xml.Linq.XObject.Changing
+  - System.Xml.Linq.XObject.Document
+  - System.Xml.Linq.XObject.NodeType
+  - System.Xml.Linq.XObject.Parent
+  - System.Xml.Linq.XObject.RemoveAnnotations(Type)
+  - System.Xml.Linq.XObject.RemoveAnnotations``1
+  langs:
+  - csharp
+  - vb
+  name: XObject
+  fullName: System.Xml.Linq.XObject
+  type: Class
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 14
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Represents a node or an attribute in an XML tree.
+  example: []
+  syntax:
+    content: 'public abstract class XObject : IXmlLineInfo'
+    content.vb: Public MustInherit Class XObject Inherits IXmlLineInfo
+  inheritance:
+  - System.Object
+- uid: System.Xml.Linq.XObject.BaseUri
+  id: BaseUri
+  parent: System.Xml.Linq.XObject
+  langs:
+  - csharp
+  - vb
+  name: BaseUri
+  fullName: System.Xml.Linq.XObject.BaseUri
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 24
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Get the BaseUri for this <xref href="System.Xml.Linq.XObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public string BaseUri { get; }
+    content.vb: Public ReadOnly Property BaseUri As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.Linq.XObject.Document
+  id: Document
+  parent: System.Xml.Linq.XObject
+  langs:
+  - csharp
+  - vb
+  name: Document
+  fullName: System.Xml.Linq.XObject.Document
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 48
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the XDocument object for this <xref href="System.Xml.Linq.XObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public XDocument Document { get; }
+    content.vb: Public ReadOnly Property Document As XDocument
+    parameters: []
+    return:
+      type: System.Xml.Linq.XDocument
+- uid: System.Xml.Linq.XObject.NodeType
+  id: NodeType
+  parent: System.Xml.Linq.XObject
+  langs:
+  - csharp
+  - vb
+  name: NodeType
+  fullName: System.Xml.Linq.XObject.NodeType
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 61
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the node type for this <xref href="System.Xml.Linq.XObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public abstract XmlNodeType NodeType { get; }
+    content.vb: Public MustOverride ReadOnly Property NodeType As XmlNodeType
+    parameters: []
+    return:
+      type: XmlNodeType
+- uid: System.Xml.Linq.XObject.Parent
+  id: Parent
+  parent: System.Xml.Linq.XObject
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  fullName: System.Xml.Linq.XObject.Parent
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 69
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the parent <xref href="System.Xml.Linq.XElement" data-throw-if-not-resolved="false"></xref> of this <xref href="System.Xml.Linq.XObject" data-throw-if-not-resolved="false"></xref>.
+  remarks: If this <xref href="System.Xml.Linq.XObject" data-throw-if-not-resolved="false"></xref> has no parent <xref href="System.Xml.Linq.XElement" data-throw-if-not-resolved="false"></xref>, this property returns null.
+  example: []
+  syntax:
+    content: public XElement Parent { get; }
+    content.vb: Public ReadOnly Property Parent As XElement
+    parameters: []
+    return:
+      type: System.Xml.Linq.XElement
+- uid: System.Xml.Linq.XObject.AddAnnotation(System.Object)
+  id: AddAnnotation(System.Object)
+  parent: System.Xml.Linq.XObject
+  langs:
+  - csharp
+  - vb
+  name: AddAnnotation(Object)
+  fullName: System.Xml.Linq.XObject.AddAnnotation(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 78
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Adds an object to the annotation list of this <xref href="System.Xml.Linq.XObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void AddAnnotation(object annotation)
+    content.vb: Public Sub AddAnnotation(annotation As Object)
+    parameters:
+    - id: annotation
+      type: System.Object
+      description: The annotation to add.
+- uid: System.Xml.Linq.XObject.Annotation(Type)
+  id: Annotation(Type)
+  parent: System.Xml.Linq.XObject
+  langs:
+  - csharp
+  - vb
+  name: Annotation(Type)
+  fullName: System.Xml.Linq.XObject.Annotation(Type)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 115
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Returns the first annotation object of the specified type from the list of annotations
+
+    of this <xref href="System.Xml.Linq.XObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public object Annotation(Type type)
+    content.vb: Public Function Annotation(type As Type) As Object
+    parameters:
+    - id: type
+      type: Type
+      description: The type of the annotation to retrieve.
+    return:
+      type: System.Object
+      description: >-
+        The first matching annotation object, or null
+
+        if no annotation is the specified type.
+- uid: System.Xml.Linq.XObject.Annotation``1
+  id: Annotation``1
+  parent: System.Xml.Linq.XObject
+  langs:
+  - csharp
+  - vb
+  name: Annotation<T>()
+  name.vb: Annotation(Of T)()
+  fullName: System.Xml.Linq.XObject.Annotation<T>()
+  fullName.vb: System.Xml.Linq.XObject.Annotation(Of T)()
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 171
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Returns the first annotation object of the specified type from the list of annotations
+
+    of this <xref href="System.Xml.Linq.XObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public T Annotation<T>()where T : class'
+    content.vb: Public Function Annotation(Of T As Class) As T
+    typeParameters:
+    - id: T
+      description: The type of the annotation to retrieve.
+    return:
+      type: '{T}'
+      description: >-
+        The first matching annotation object, or null if no annotation
+
+        is the specified type.
+- uid: System.Xml.Linq.XObject.Annotations(Type)
+  id: Annotations(Type)
+  parent: System.Xml.Linq.XObject
+  langs:
+  - csharp
+  - vb
+  name: Annotations(Type)
+  fullName: System.Xml.Linq.XObject.Annotations(Type)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 194
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Returns an enumerable collection of annotations of the specified type
+
+    for this <xref href="System.Xml.Linq.XObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IEnumerable<object> Annotations(Type type)
+    content.vb: Public Function Annotations(type As Type) As IEnumerable(Of Object)
+    parameters:
+    - id: type
+      type: Type
+      description: The type of the annotations to retrieve.
+    return:
+      type: IEnumerable{System.Object}
+      description: An enumerable collection of annotations for this XObject.
+- uid: System.Xml.Linq.XObject.Annotations``1
+  id: Annotations``1
+  parent: System.Xml.Linq.XObject
+  langs:
+  - csharp
+  - vb
+  name: Annotations<T>()
+  name.vb: Annotations(Of T)()
+  fullName: System.Xml.Linq.XObject.Annotations<T>()
+  fullName.vb: System.Xml.Linq.XObject.Annotations(Of T)()
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 227
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Returns an enumerable collection of annotations of the specified type
+
+    for this <xref href="System.Xml.Linq.XObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public IEnumerable<T> Annotations<T>()where T : class'
+    content.vb: Public Function Annotations(Of T As Class) As IEnumerable(Of T)
+    typeParameters:
+    - id: T
+      description: The type of the annotations to retrieve.
+    return:
+      type: IEnumerable{{T}}
+      description: An enumerable collection of annotations for this XObject.
+- uid: System.Xml.Linq.XObject.RemoveAnnotations(Type)
+  id: RemoveAnnotations(Type)
+  parent: System.Xml.Linq.XObject
+  langs:
+  - csharp
+  - vb
+  name: RemoveAnnotations(Type)
+  fullName: System.Xml.Linq.XObject.RemoveAnnotations(Type)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 254
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Removes the annotations of the specified type from this <xref href="System.Xml.Linq.XObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void RemoveAnnotations(Type type)
+    content.vb: Public Sub RemoveAnnotations(type As Type)
+    parameters:
+    - id: type
+      type: Type
+      description: The type of annotations to remove.
+- uid: System.Xml.Linq.XObject.RemoveAnnotations``1
+  id: RemoveAnnotations``1
+  parent: System.Xml.Linq.XObject
+  langs:
+  - csharp
+  - vb
+  name: RemoveAnnotations<T>()
+  name.vb: RemoveAnnotations(Of T)()
+  fullName: System.Xml.Linq.XObject.RemoveAnnotations<T>()
+  fullName.vb: System.Xml.Linq.XObject.RemoveAnnotations(Of T)()
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 290
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Removes the annotations of the specified type from this <xref href="System.Xml.Linq.XObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public void RemoveAnnotations<T>()where T : class'
+    content.vb: Public Sub RemoveAnnotations(Of T As Class)
+    typeParameters:
+    - id: T
+      description: The type of annotations to remove.
+- uid: System.Xml.Linq.XObject.Changed
+  id: Changed
+  parent: System.Xml.Linq.XObject
+  langs:
+  - csharp
+  - vb
+  name: Changed
+  fullName: System.Xml.Linq.XObject.Changed
+  type: Event
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 324
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Occurs when this <xref href="System.Xml.Linq.XObject" data-throw-if-not-resolved="false"></xref> or any of its descendants have changed.
+  example: []
+  syntax:
+    content: public event EventHandler<XObjectChangeEventArgs> Changed
+    content.vb: Public Event Changed As EventHandler(Of XObjectChangeEventArgs)
+- uid: System.Xml.Linq.XObject.Changing
+  id: Changing
+  parent: System.Xml.Linq.XObject
+  langs:
+  - csharp
+  - vb
+  name: Changing
+  fullName: System.Xml.Linq.XObject.Changing
+  type: Event
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObject.cs
+    startLine: 353
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Occurs when this <xref href="System.Xml.Linq.XObject" data-throw-if-not-resolved="false"></xref> or any of its descendants are about to change.
+  example: []
+  syntax:
+    content: public event EventHandler<XObjectChangeEventArgs> Changing
+    content.vb: Public Event Changing As EventHandler(Of XObjectChangeEventArgs)
+references:
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq
+- uid: System.Object
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Xml.Linq.XObject
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XObject
+  fullName: System.Xml.Linq.XObject
+- uid: System.String
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Xml.Linq.XDocument
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XDocument
+  fullName: System.Xml.Linq.XDocument
+- uid: XmlNodeType
+  isExternal: true
+  name: XmlNodeType
+  fullName: XmlNodeType
+- uid: System.Xml.Linq.XElement
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XElement
+  fullName: System.Xml.Linq.XElement
+- uid: Type
+  isExternal: true
+  name: Type
+  fullName: Type
+- uid: '{T}'
+  isExternal: false
+  name: T
+  fullName: T
+- uid: IEnumerable{System.Object}
+  definition: IEnumerable`1
+  name: IEnumerable<Object>
+  fullName: IEnumerable<System.Object>
+  fullname.vb: IEnumerable(Of System.Object)
+  name.vb: IEnumerable(Of Object)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  fullName: IEnumerable<>
+  fullname.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: )
+    fullName: )
+- uid: IEnumerable{{T}}
+  definition: IEnumerable`1
+  name: IEnumerable<T>
+  fullName: IEnumerable<T>
+  fullname.vb: IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - name: T
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - name: T
+    fullName: T
+  - name: )
+    fullName: )

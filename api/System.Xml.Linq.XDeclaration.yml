@@ -1,0 +1,237 @@
+items:
+- uid: System.Xml.Linq.XDeclaration
+  id: XDeclaration
+  parent: System.Xml.Linq
+  children:
+  - System.Xml.Linq.XDeclaration.#ctor(System.String,System.String,System.String)
+  - System.Xml.Linq.XDeclaration.#ctor(System.Xml.Linq.XDeclaration)
+  - System.Xml.Linq.XDeclaration.Encoding
+  - System.Xml.Linq.XDeclaration.Standalone
+  - System.Xml.Linq.XDeclaration.ToString
+  - System.Xml.Linq.XDeclaration.Version
+  langs:
+  - csharp
+  - vb
+  name: XDeclaration
+  fullName: System.Xml.Linq.XDeclaration
+  type: Class
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDeclaration.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDeclaration.cs
+    startLine: 16
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Represents an XML declaration.
+  remarks: >-
+    An XML declaration is used to declare the XML version,
+
+    the encoding, and whether or not the XML document is standalone.
+  example: []
+  syntax:
+    content: 'public class XDeclaration : object'
+    content.vb: Public Class XDeclaration Inherits Object
+  inheritance:
+  - System.Object
+- uid: System.Xml.Linq.XDeclaration.#ctor(System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String)'
+  parent: System.Xml.Linq.XDeclaration
+  langs:
+  - csharp
+  - vb
+  name: XDeclaration(String, String, String)
+  fullName: System.Xml.Linq.XDeclaration.XDeclaration(System.String, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDeclaration.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDeclaration.cs
+    startLine: 36
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Initializes a new instance of the <xref href="System.Xml.Linq.XDeclaration" data-throw-if-not-resolved="false"></xref> class from the
+
+    specified version, encoding, and standalone properties.
+  example: []
+  syntax:
+    content: public XDeclaration(string version, string encoding, string standalone)
+    content.vb: Public Sub New(version As String, encoding As String, standalone As String)
+    parameters:
+    - id: version
+      type: System.String
+      description: The version of the XML, usually "1.0".
+    - id: encoding
+      type: System.String
+      description: The encoding for the XML document.
+    - id: standalone
+      type: System.String
+      description: >-
+        Specifies whether the XML is standalone or requires external entities
+
+        to be resolved.
+- uid: System.Xml.Linq.XDeclaration.#ctor(System.Xml.Linq.XDeclaration)
+  id: '#ctor(System.Xml.Linq.XDeclaration)'
+  parent: System.Xml.Linq.XDeclaration
+  langs:
+  - csharp
+  - vb
+  name: XDeclaration(XDeclaration)
+  fullName: System.Xml.Linq.XDeclaration.XDeclaration(System.Xml.Linq.XDeclaration)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDeclaration.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDeclaration.cs
+    startLine: 50
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Initializes an instance of the <xref href="System.Xml.Linq.XDeclaration" data-throw-if-not-resolved="false"></xref> class
+
+    from another <xref href="System.Xml.Linq.XDeclaration" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: public XDeclaration(XDeclaration other)
+    content.vb: Public Sub New(other As XDeclaration)
+    parameters:
+    - id: other
+      type: System.Xml.Linq.XDeclaration
+      description: The <xref href="System.Xml.Linq.XDeclaration" data-throw-if-not-resolved="false"></xref> used to initialize this <xref href="System.Xml.Linq.XDeclaration" data-throw-if-not-resolved="false"></xref> object.
+- uid: System.Xml.Linq.XDeclaration.Encoding
+  id: Encoding
+  parent: System.Xml.Linq.XDeclaration
+  langs:
+  - csharp
+  - vb
+  name: Encoding
+  fullName: System.Xml.Linq.XDeclaration.Encoding
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDeclaration.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDeclaration.cs
+    startLine: 69
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets or sets the encoding for this document.
+  example: []
+  syntax:
+    content: public string Encoding { get; set; }
+    content.vb: Public Property Encoding As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.Linq.XDeclaration.Standalone
+  id: Standalone
+  parent: System.Xml.Linq.XDeclaration
+  langs:
+  - csharp
+  - vb
+  name: Standalone
+  fullName: System.Xml.Linq.XDeclaration.Standalone
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDeclaration.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDeclaration.cs
+    startLine: 81
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets or sets the standalone property for this document.
+  remarks: The valid values for standalone are "yes" or "no".
+  example: []
+  syntax:
+    content: public string Standalone { get; set; }
+    content.vb: Public Property Standalone As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.Linq.XDeclaration.Version
+  id: Version
+  parent: System.Xml.Linq.XDeclaration
+  langs:
+  - csharp
+  - vb
+  name: Version
+  fullName: System.Xml.Linq.XDeclaration.Version
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDeclaration.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDeclaration.cs
+    startLine: 93
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets or sets the version property for this document.
+  remarks: The value is usually "1.0".
+  example: []
+  syntax:
+    content: public string Version { get; set; }
+    content.vb: Public Property Version As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.Linq.XDeclaration.ToString
+  id: ToString
+  parent: System.Xml.Linq.XDeclaration
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  fullName: System.Xml.Linq.XDeclaration.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XDeclaration.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XDeclaration.cs
+    startLine: 103
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Provides a formatted string.
+  example: []
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: A formatted XML string.
+references:
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq
+- uid: System.Object
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Xml.Linq.XDeclaration
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XDeclaration
+  fullName: System.Xml.Linq.XDeclaration
+- uid: System.String
+  isExternal: true
+  name: String
+  fullName: System.String

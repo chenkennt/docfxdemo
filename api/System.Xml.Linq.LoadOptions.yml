@@ -1,0 +1,131 @@
+items:
+- uid: System.Xml.Linq.LoadOptions
+  id: LoadOptions
+  parent: System.Xml.Linq
+  children:
+  - System.Xml.Linq.LoadOptions.None
+  - System.Xml.Linq.LoadOptions.PreserveWhitespace
+  - System.Xml.Linq.LoadOptions.SetBaseUri
+  - System.Xml.Linq.LoadOptions.SetLineInfo
+  langs:
+  - csharp
+  - vb
+  name: LoadOptions
+  fullName: System.Xml.Linq.LoadOptions
+  type: Enum
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+    startLine: 613
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Specifies a set of options for Load().
+  example: []
+  syntax:
+    content: 'public enum LoadOptions : int'
+    content.vb: Public Enum LoadOptions As Integer
+- uid: System.Xml.Linq.LoadOptions.None
+  id: None
+  parent: System.Xml.Linq.LoadOptions
+  langs:
+  - csharp
+  - vb
+  name: None
+  fullName: System.Xml.Linq.LoadOptions.None
+  type: Field
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+    startLine: 617
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Default options.
+  example: []
+  syntax:
+    content: None = null
+    content.vb: None = Nothing
+- uid: System.Xml.Linq.LoadOptions.PreserveWhitespace
+  id: PreserveWhitespace
+  parent: System.Xml.Linq.LoadOptions
+  langs:
+  - csharp
+  - vb
+  name: PreserveWhitespace
+  fullName: System.Xml.Linq.LoadOptions.PreserveWhitespace
+  type: Field
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+    startLine: 620
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Preserve whitespace.
+  example: []
+  syntax:
+    content: PreserveWhitespace = null
+    content.vb: PreserveWhitespace = Nothing
+- uid: System.Xml.Linq.LoadOptions.SetBaseUri
+  id: SetBaseUri
+  parent: System.Xml.Linq.LoadOptions
+  langs:
+  - csharp
+  - vb
+  name: SetBaseUri
+  fullName: System.Xml.Linq.LoadOptions.SetBaseUri
+  type: Field
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+    startLine: 624
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Set the BaseUri property.
+  example: []
+  syntax:
+    content: SetBaseUri = null
+    content.vb: SetBaseUri = Nothing
+- uid: System.Xml.Linq.LoadOptions.SetLineInfo
+  id: SetLineInfo
+  parent: System.Xml.Linq.LoadOptions
+  langs:
+  - csharp
+  - vb
+  name: SetLineInfo
+  fullName: System.Xml.Linq.LoadOptions.SetLineInfo
+  type: Field
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XLinq.cs
+    startLine: 627
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Set the IXmlLineInfo.
+  example: []
+  syntax:
+    content: SetLineInfo = null
+    content.vb: SetLineInfo = Nothing
+references:
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq

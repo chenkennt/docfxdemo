@@ -1,0 +1,413 @@
+items:
+- uid: System.Xml.Linq.XName
+  id: XName
+  parent: System.Xml.Linq
+  children:
+  - System.Xml.Linq.XName.Equals(System.Object)
+  - System.Xml.Linq.XName.Get(System.String)
+  - System.Xml.Linq.XName.Get(System.String,System.String)
+  - System.Xml.Linq.XName.GetHashCode
+  - System.Xml.Linq.XName.LocalName
+  - System.Xml.Linq.XName.Namespace
+  - System.Xml.Linq.XName.NamespaceName
+  - System.Xml.Linq.XName.op_Equality(System.Xml.Linq.XName,System.Xml.Linq.XName)
+  - System.Xml.Linq.XName.op_Implicit(System.String)~System.Xml.Linq.XName
+  - System.Xml.Linq.XName.op_Inequality(System.Xml.Linq.XName,System.Xml.Linq.XName)
+  - System.Xml.Linq.XName.ToString
+  langs:
+  - csharp
+  - vb
+  name: XName
+  fullName: System.Xml.Linq.XName
+  type: Class
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+    startLine: 11
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Represents a name of an XML element or attribute. This class cannot be inherited.
+  example: []
+  syntax:
+    content: 'public sealed class XName : IEquatable<XName>'
+    content.vb: Public NotInheritable Class XName Inherits IEquatable(Of XName)
+  inheritance:
+  - System.Object
+- uid: System.Xml.Linq.XName.LocalName
+  id: LocalName
+  parent: System.Xml.Linq.XName
+  langs:
+  - csharp
+  - vb
+  name: LocalName
+  fullName: System.Xml.Linq.XName.LocalName
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+    startLine: 32
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the local (unqualified) part of the name.
+  example: []
+  syntax:
+    content: public string LocalName { get; }
+    content.vb: Public ReadOnly Property LocalName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.Linq.XName.Namespace
+  id: Namespace
+  parent: System.Xml.Linq.XName
+  langs:
+  - csharp
+  - vb
+  name: Namespace
+  fullName: System.Xml.Linq.XName.Namespace
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+    startLine: 40
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the namespace of the name.
+  example: []
+  syntax:
+    content: public XNamespace Namespace { get; }
+    content.vb: Public ReadOnly Property Namespace As XNamespace
+    parameters: []
+    return:
+      type: System.Xml.Linq.XNamespace
+- uid: System.Xml.Linq.XName.NamespaceName
+  id: NamespaceName
+  parent: System.Xml.Linq.XName
+  langs:
+  - csharp
+  - vb
+  name: NamespaceName
+  fullName: System.Xml.Linq.XName.NamespaceName
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+    startLine: 48
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the namespace name part of the name.
+  example: []
+  syntax:
+    content: public string NamespaceName { get; }
+    content.vb: Public ReadOnly Property NamespaceName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.Linq.XName.ToString
+  id: ToString
+  parent: System.Xml.Linq.XName
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  fullName: System.Xml.Linq.XName.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+    startLine: 56
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: 'Returns the expanded XML name in the format: {namespaceName}localName.'
+  example: []
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+- uid: System.Xml.Linq.XName.Get(System.String)
+  id: Get(System.String)
+  parent: System.Xml.Linq.XName
+  langs:
+  - csharp
+  - vb
+  name: Get(String)
+  fullName: System.Xml.Linq.XName.Get(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+    startLine: 71
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Returns an <xref href="System.Xml.Linq.XName" data-throw-if-not-resolved="false"></xref> object created from the specified expanded name.
+  example: []
+  syntax:
+    content: public static XName Get(string expandedName)
+    content.vb: Public Shared Function Get(expandedName As String) As XName
+    parameters:
+    - id: expandedName
+      type: System.String
+      description: 'A string containing an expanded XML name in the format: {namespace}localname.'
+    return:
+      type: System.Xml.Linq.XName
+      description: An <xref href="System.Xml.Linq.XName" data-throw-if-not-resolved="false"></xref> object constructed from the specified expanded name.
+- uid: System.Xml.Linq.XName.Get(System.String,System.String)
+  id: Get(System.String,System.String)
+  parent: System.Xml.Linq.XName
+  langs:
+  - csharp
+  - vb
+  name: Get(String, String)
+  fullName: System.Xml.Linq.XName.Get(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+    startLine: 93
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Returns an <xref href="System.Xml.Linq.XName" data-throw-if-not-resolved="false"></xref> object from a local name and a namespace.
+  example: []
+  syntax:
+    content: public static XName Get(string localName, string namespaceName)
+    content.vb: Public Shared Function Get(localName As String, namespaceName As String) As XName
+    parameters:
+    - id: localName
+      type: System.String
+      description: A local (unqualified) name.
+    - id: namespaceName
+      type: System.String
+      description: An XML namespace.
+    return:
+      type: System.Xml.Linq.XName
+      description: An XName object created from the specified local name and namespace.
+- uid: System.Xml.Linq.XName.op_Implicit(System.String)~System.Xml.Linq.XName
+  id: op_Implicit(System.String)~System.Xml.Linq.XName
+  parent: System.Xml.Linq.XName
+  langs:
+  - csharp
+  - vb
+  name: Implicit(String to XName)
+  name.vb: Widening(String to XName)
+  fullName: System.Xml.Linq.XName.Implicit(System.String to System.Xml.Linq.XName)
+  fullName.vb: System.Xml.Linq.XName.Widening(System.String to System.Xml.Linq.XName)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+    startLine: 103
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Converts a string formatted as an expanded XML name ({namespace}localname) to an XName object.
+  example: []
+  syntax:
+    content: public static implicit operator XName(string expandedName)
+    content.vb: Public Shared Widening Operator CType(expandedName As String) As XName
+    parameters:
+    - id: expandedName
+      type: System.String
+      description: 'A string containing an expanded XML name in the format: {namespace}localname.'
+    return:
+      type: System.Xml.Linq.XName
+      description: An XName object constructed from the expanded name.
+- uid: System.Xml.Linq.XName.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Xml.Linq.XName
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  fullName: System.Xml.Linq.XName.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+    startLine: 119
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Determines whether the specified <xref href="System.Xml.Linq.XName" data-throw-if-not-resolved="false"></xref> is equal to the current <xref href="System.Xml.Linq.XName" data-throw-if-not-resolved="false"></xref>.
+  remarks: For two <xref href="System.Xml.Linq.XName" data-throw-if-not-resolved="false"></xref> objects to be equal, they must have the same expanded name.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The XName to compare to the current XName.
+    return:
+      type: System.Boolean
+      description: true if the specified <xref href="System.Xml.Linq.XName" data-throw-if-not-resolved="false"></xref> is equal to the current XName; otherwise false.
+- uid: System.Xml.Linq.XName.GetHashCode
+  id: GetHashCode
+  parent: System.Xml.Linq.XName
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  fullName: System.Xml.Linq.XName.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+    startLine: 128
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Serves as a hash function for <xref href="System.Xml.Linq.XName" data-throw-if-not-resolved="false"></xref>. GetHashCode is suitable
+
+    for use in hashing algorithms and data structures like a hash table.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+- uid: System.Xml.Linq.XName.op_Equality(System.Xml.Linq.XName,System.Xml.Linq.XName)
+  id: op_Equality(System.Xml.Linq.XName,System.Xml.Linq.XName)
+  parent: System.Xml.Linq.XName
+  langs:
+  - csharp
+  - vb
+  name: Equality(XName, XName)
+  fullName: System.Xml.Linq.XName.Equality(System.Xml.Linq.XName, System.Xml.Linq.XName)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+    startLine: 149
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Returns a value indicating whether two instances of <xref href="System.Xml.Linq.XName" data-throw-if-not-resolved="false"></xref> are equal.
+  remarks: >-
+    This overload is included to enable the comparison between
+
+    an instance of XName and string.
+  example: []
+  syntax:
+    content: public static bool operator ==(XName left, XName right)
+    content.vb: Public Shared Operator =(left As XName, right As XName) As Boolean
+    parameters:
+    - id: left
+      type: System.Xml.Linq.XName
+      description: The first XName to compare.
+    - id: right
+      type: System.Xml.Linq.XName
+      description: The second XName to compare.
+    return:
+      type: System.Boolean
+      description: true if left and right are equal; otherwise false.
+- uid: System.Xml.Linq.XName.op_Inequality(System.Xml.Linq.XName,System.Xml.Linq.XName)
+  id: op_Inequality(System.Xml.Linq.XName,System.Xml.Linq.XName)
+  parent: System.Xml.Linq.XName
+  langs:
+  - csharp
+  - vb
+  name: Inequality(XName, XName)
+  fullName: System.Xml.Linq.XName.Inequality(System.Xml.Linq.XName, System.Xml.Linq.XName)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XName.cs
+    startLine: 164
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Returns a value indicating whether two instances of <xref href="System.Xml.Linq.XName" data-throw-if-not-resolved="false"></xref> are not equal.
+  remarks: >-
+    This overload is included to enable the comparison between
+
+    an instance of XName and string.
+  example: []
+  syntax:
+    content: public static bool operator !=(XName left, XName right)
+    content.vb: Public Shared Operator <>(left As XName, right As XName) As Boolean
+    parameters:
+    - id: left
+      type: System.Xml.Linq.XName
+      description: The first XName to compare.
+    - id: right
+      type: System.Xml.Linq.XName
+      description: The second XName to compare.
+    return:
+      type: System.Boolean
+      description: true if left and right are not equal; otherwise false.
+references:
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq
+- uid: System.Object
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Xml.Linq.XName.Namespace
+- uid: System.String
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Xml.Linq.XNamespace
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XNamespace
+  fullName: System.Xml.Linq.XNamespace
+- uid: System.Xml.Linq.XName
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XName
+  fullName: System.Xml.Linq.XName
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

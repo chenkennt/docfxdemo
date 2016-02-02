@@ -1,0 +1,222 @@
+items:
+- uid: System.Xml.Linq.XObjectChangeEventArgs
+  id: XObjectChangeEventArgs
+  parent: System.Xml.Linq
+  children:
+  - System.Xml.Linq.XObjectChangeEventArgs.#ctor(System.Xml.Linq.XObjectChange)
+  - System.Xml.Linq.XObjectChangeEventArgs.Add
+  - System.Xml.Linq.XObjectChangeEventArgs.Name
+  - System.Xml.Linq.XObjectChangeEventArgs.ObjectChange
+  - System.Xml.Linq.XObjectChangeEventArgs.Remove
+  - System.Xml.Linq.XObjectChangeEventArgs.Value
+  langs:
+  - csharp
+  - vb
+  name: XObjectChangeEventArgs
+  fullName: System.Xml.Linq.XObjectChangeEventArgs
+  type: Class
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObjectChangeEventArgs.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObjectChangeEventArgs.cs
+    startLine: 11
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Provides data for the <xref href="System.Xml.Linq.XObject.Changing" data-throw-if-not-resolved="false"></xref> and <xref href="System.Xml.Linq.XObject.Changed" data-throw-if-not-resolved="false"></xref> events.
+  example: []
+  syntax:
+    content: 'public class XObjectChangeEventArgs : EventArgs'
+    content.vb: Public Class XObjectChangeEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+- uid: System.Xml.Linq.XObjectChangeEventArgs.Add
+  id: Add
+  parent: System.Xml.Linq.XObjectChangeEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Add
+  fullName: System.Xml.Linq.XObjectChangeEventArgs.Add
+  type: Field
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObjectChangeEventArgs.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObjectChangeEventArgs.cs
+    startLine: 19
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Event argument for a <xref href="System.Xml.Linq.XObjectChange.Add" data-throw-if-not-resolved="false"></xref> change event.
+  example: []
+  syntax:
+    content: public static readonly XObjectChangeEventArgs Add
+    content.vb: Public Shared ReadOnly Add As XObjectChangeEventArgs
+- uid: System.Xml.Linq.XObjectChangeEventArgs.Remove
+  id: Remove
+  parent: System.Xml.Linq.XObjectChangeEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Remove
+  fullName: System.Xml.Linq.XObjectChangeEventArgs.Remove
+  type: Field
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObjectChangeEventArgs.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObjectChangeEventArgs.cs
+    startLine: 25
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Event argument for a <xref href="System.Xml.Linq.XObjectChange.Remove" data-throw-if-not-resolved="false"></xref> change event.
+  example: []
+  syntax:
+    content: public static readonly XObjectChangeEventArgs Remove
+    content.vb: Public Shared ReadOnly Remove As XObjectChangeEventArgs
+- uid: System.Xml.Linq.XObjectChangeEventArgs.Name
+  id: Name
+  parent: System.Xml.Linq.XObjectChangeEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Name
+  fullName: System.Xml.Linq.XObjectChangeEventArgs.Name
+  type: Field
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObjectChangeEventArgs.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObjectChangeEventArgs.cs
+    startLine: 31
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Event argument for a <xref href="System.Xml.Linq.XObjectChange.Name" data-throw-if-not-resolved="false"></xref> change event.
+  example: []
+  syntax:
+    content: public static readonly XObjectChangeEventArgs Name
+    content.vb: Public Shared ReadOnly Name As XObjectChangeEventArgs
+- uid: System.Xml.Linq.XObjectChangeEventArgs.Value
+  id: Value
+  parent: System.Xml.Linq.XObjectChangeEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Value
+  fullName: System.Xml.Linq.XObjectChangeEventArgs.Value
+  type: Field
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObjectChangeEventArgs.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObjectChangeEventArgs.cs
+    startLine: 37
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Event argument for a <xref href="System.Xml.Linq.XObjectChange.Value" data-throw-if-not-resolved="false"></xref> change event.
+  example: []
+  syntax:
+    content: public static readonly XObjectChangeEventArgs Value
+    content.vb: Public Shared ReadOnly Value As XObjectChangeEventArgs
+- uid: System.Xml.Linq.XObjectChangeEventArgs.#ctor(System.Xml.Linq.XObjectChange)
+  id: '#ctor(System.Xml.Linq.XObjectChange)'
+  parent: System.Xml.Linq.XObjectChangeEventArgs
+  langs:
+  - csharp
+  - vb
+  name: XObjectChangeEventArgs(XObjectChange)
+  fullName: System.Xml.Linq.XObjectChangeEventArgs.XObjectChangeEventArgs(System.Xml.Linq.XObjectChange)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObjectChangeEventArgs.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObjectChangeEventArgs.cs
+    startLine: 42
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Initializes a new instance of the <xref href="System.Xml.Linq.XObjectChangeEventArgs" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public XObjectChangeEventArgs(XObjectChange objectChange)
+    content.vb: Public Sub New(objectChange As XObjectChange)
+    parameters:
+    - id: objectChange
+      type: System.Xml.Linq.XObjectChange
+- uid: System.Xml.Linq.XObjectChangeEventArgs.ObjectChange
+  id: ObjectChange
+  parent: System.Xml.Linq.XObjectChangeEventArgs
+  langs:
+  - csharp
+  - vb
+  name: ObjectChange
+  fullName: System.Xml.Linq.XObjectChangeEventArgs.ObjectChange
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XObjectChangeEventArgs.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XObjectChangeEventArgs.cs
+    startLine: 50
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the type (<xref href="System.Xml.Linq.XObjectChange" data-throw-if-not-resolved="false"></xref>) of change.
+  example: []
+  syntax:
+    content: public XObjectChange ObjectChange { get; }
+    content.vb: Public ReadOnly Property ObjectChange As XObjectChange
+    parameters: []
+    return:
+      type: System.Xml.Linq.XObjectChange
+references:
+- uid: System.Xml.Linq.XObject.Changing
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: Changing
+  fullName: System.Xml.Linq.XObject.Changing
+- uid: System.Xml.Linq.XObject.Changed
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: Changed
+  fullName: System.Xml.Linq.XObject.Changed
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq
+- uid: System.Object
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Xml.Linq.XObject
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XObject
+  fullName: System.Xml.Linq.XObject
+- uid: System.Xml.Linq.XObjectChange.Add
+- uid: System.Xml.Linq.XObjectChange.Remove
+- uid: System.Xml.Linq.XObjectChange.Name
+- uid: System.Xml.Linq.XObjectChange.Value
+- uid: System.Xml.Linq.XObjectChangeEventArgs
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XObjectChangeEventArgs
+  fullName: System.Xml.Linq.XObjectChangeEventArgs
+- uid: System.Xml.Linq.XObjectChange
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XObjectChange
+  fullName: System.Xml.Linq.XObjectChange

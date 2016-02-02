@@ -1,0 +1,484 @@
+items:
+- uid: System.Xml.Linq.XNamespace
+  id: XNamespace
+  parent: System.Xml.Linq
+  children:
+  - System.Xml.Linq.XNamespace.Equals(System.Object)
+  - System.Xml.Linq.XNamespace.Get(System.String)
+  - System.Xml.Linq.XNamespace.GetHashCode
+  - System.Xml.Linq.XNamespace.GetName(System.String)
+  - System.Xml.Linq.XNamespace.NamespaceName
+  - System.Xml.Linq.XNamespace.None
+  - System.Xml.Linq.XNamespace.op_Addition(System.Xml.Linq.XNamespace,System.String)
+  - System.Xml.Linq.XNamespace.op_Equality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)
+  - System.Xml.Linq.XNamespace.op_Implicit(System.String)~System.Xml.Linq.XNamespace
+  - System.Xml.Linq.XNamespace.op_Inequality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)
+  - System.Xml.Linq.XNamespace.ToString
+  - System.Xml.Linq.XNamespace.Xml
+  - System.Xml.Linq.XNamespace.Xmlns
+  langs:
+  - csharp
+  - vb
+  name: XNamespace
+  fullName: System.Xml.Linq.XNamespace
+  type: Class
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 13
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Represents an XML namespace. This class cannot be inherited.
+  example: []
+  syntax:
+    content: 'public sealed class XNamespace : object'
+    content.vb: Public NotInheritable Class XNamespace Inherits Object
+  inheritance:
+  - System.Object
+- uid: System.Xml.Linq.XNamespace.NamespaceName
+  id: NamespaceName
+  parent: System.Xml.Linq.XNamespace
+  langs:
+  - csharp
+  - vb
+  name: NamespaceName
+  fullName: System.Xml.Linq.XNamespace.NamespaceName
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 43
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the namespace name of the namespace.
+  example: []
+  syntax:
+    content: public string NamespaceName { get; }
+    content.vb: Public ReadOnly Property NamespaceName As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.Linq.XNamespace.GetName(System.String)
+  id: GetName(System.String)
+  parent: System.Xml.Linq.XNamespace
+  langs:
+  - csharp
+  - vb
+  name: GetName(String)
+  fullName: System.Xml.Linq.XNamespace.GetName(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 55
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Returns an <xref href="System.Xml.Linq.XName" data-throw-if-not-resolved="false"></xref> object created from the current instance and the specified local name.
+  remarks: >-
+    The returned <xref href="System.Xml.Linq.XName" data-throw-if-not-resolved="false"></xref> object is guaranteed to be atomic (i.e. the only one in the system for this
+
+    particular expanded name).
+  example: []
+  syntax:
+    content: public XName GetName(string localName)
+    content.vb: Public Function GetName(localName As String) As XName
+    parameters:
+    - id: localName
+      type: System.String
+    return:
+      type: System.Xml.Linq.XName
+- uid: System.Xml.Linq.XNamespace.ToString
+  id: ToString
+  parent: System.Xml.Linq.XNamespace
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  fullName: System.Xml.Linq.XNamespace.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 65
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Returns the namespace name of this <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: A string value containing the namespace name.
+- uid: System.Xml.Linq.XNamespace.None
+  id: None
+  parent: System.Xml.Linq.XNamespace
+  langs:
+  - csharp
+  - vb
+  name: None
+  fullName: System.Xml.Linq.XNamespace.None
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 77
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> object that corresponds to no namespace.
+  remarks: >-
+    If an element or attribute is in no namespace, its namespace
+
+    will be set to the namespace returned by this property.
+  example: []
+  syntax:
+    content: public static XNamespace None { get; }
+    content.vb: Public Shared ReadOnly Property None As XNamespace
+    parameters: []
+    return:
+      type: System.Xml.Linq.XNamespace
+- uid: System.Xml.Linq.XNamespace.Xml
+  id: Xml
+  parent: System.Xml.Linq.XNamespace
+  langs:
+  - csharp
+  - vb
+  name: Xml
+  fullName: System.Xml.Linq.XNamespace.Xml
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 88
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> object that corresponds to the xml uri (http://www.w3.org/XML/1998/namespace).
+  example: []
+  syntax:
+    content: public static XNamespace Xml { get; }
+    content.vb: Public Shared ReadOnly Property Xml As XNamespace
+    parameters: []
+    return:
+      type: System.Xml.Linq.XNamespace
+- uid: System.Xml.Linq.XNamespace.Xmlns
+  id: Xmlns
+  parent: System.Xml.Linq.XNamespace
+  langs:
+  - csharp
+  - vb
+  name: Xmlns
+  fullName: System.Xml.Linq.XNamespace.Xmlns
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 99
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> object that corresponds to the xmlns uri (http://www.w3.org/2000/xmlns/).
+  example: []
+  syntax:
+    content: public static XNamespace Xmlns { get; }
+    content.vb: Public Shared ReadOnly Property Xmlns As XNamespace
+    parameters: []
+    return:
+      type: System.Xml.Linq.XNamespace
+- uid: System.Xml.Linq.XNamespace.Get(System.String)
+  id: Get(System.String)
+  parent: System.Xml.Linq.XNamespace
+  langs:
+  - csharp
+  - vb
+  name: Get(String)
+  fullName: System.Xml.Linq.XNamespace.Get(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 114
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets an <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> created from the specified namespace name.
+  remarks: >-
+    The returned <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> object is guaranteed to be atomic
+
+    (i.e. the only one in the system for that particular namespace name).
+  example: []
+  syntax:
+    content: public static XNamespace Get(string namespaceName)
+    content.vb: Public Shared Function Get(namespaceName As String) As XNamespace
+    parameters:
+    - id: namespaceName
+      type: System.String
+    return:
+      type: System.Xml.Linq.XNamespace
+- uid: System.Xml.Linq.XNamespace.op_Implicit(System.String)~System.Xml.Linq.XNamespace
+  id: op_Implicit(System.String)~System.Xml.Linq.XNamespace
+  parent: System.Xml.Linq.XNamespace
+  langs:
+  - csharp
+  - vb
+  name: Implicit(String to XNamespace)
+  name.vb: Widening(String to XNamespace)
+  fullName: System.Xml.Linq.XNamespace.Implicit(System.String to System.Xml.Linq.XNamespace)
+  fullName.vb: System.Xml.Linq.XNamespace.Widening(System.String to System.Xml.Linq.XNamespace)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 125
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Converts a string containing a namespace name to an <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static implicit operator XNamespace(string namespaceName)
+    content.vb: Public Shared Widening Operator CType(namespaceName As String) As XNamespace
+    parameters:
+    - id: namespaceName
+      type: System.String
+      description: A string containing the namespace name.
+    return:
+      type: System.Xml.Linq.XNamespace
+      description: An <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> constructed from the namespace name string.
+- uid: System.Xml.Linq.XNamespace.op_Addition(System.Xml.Linq.XNamespace,System.String)
+  id: op_Addition(System.Xml.Linq.XNamespace,System.String)
+  parent: System.Xml.Linq.XNamespace
+  langs:
+  - csharp
+  - vb
+  name: Addition(XNamespace, String)
+  fullName: System.Xml.Linq.XNamespace.Addition(System.Xml.Linq.XNamespace, System.String)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 137
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Combines an <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> object with a local name to create an <xref href="System.Xml.Linq.XName" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static XName operator +(XNamespace ns, string localName)
+    content.vb: Public Shared Operator +(ns As XNamespace, localName As String) As XName
+    parameters:
+    - id: ns
+      type: System.Xml.Linq.XNamespace
+      description: The namespace for the expanded name.
+    - id: localName
+      type: System.String
+      description: The local name for the expanded name.
+    return:
+      type: System.Xml.Linq.XName
+      description: The new XName constructed from the namespace and local name.
+- uid: System.Xml.Linq.XNamespace.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Xml.Linq.XNamespace
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  fullName: System.Xml.Linq.XNamespace.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 155
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Determines whether the specified <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> is equal to the current <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    For two <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> objects to be equal they must have the same
+
+    namespace name.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> to compare to the current <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: true if the specified <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> is equal to the current <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref>; otherwise false.
+- uid: System.Xml.Linq.XNamespace.GetHashCode
+  id: GetHashCode
+  parent: System.Xml.Linq.XNamespace
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  fullName: System.Xml.Linq.XNamespace.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 164
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Serves as a hash function for <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref>. GetHashCode is suitable
+
+    for use in hashing algorithms and data structures like a hash table.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+- uid: System.Xml.Linq.XNamespace.op_Equality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)
+  id: op_Equality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)
+  parent: System.Xml.Linq.XNamespace
+  langs:
+  - csharp
+  - vb
+  name: Equality(XNamespace, XNamespace)
+  fullName: System.Xml.Linq.XNamespace.Equality(System.Xml.Linq.XNamespace, System.Xml.Linq.XNamespace)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 186
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Returns a value indicating whether two instances of <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> are equal.
+  remarks: >-
+    This overload is included to enable the comparison between
+
+    an instance of <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> and string.
+  example: []
+  syntax:
+    content: public static bool operator ==(XNamespace left, XNamespace right)
+    content.vb: Public Shared Operator =(left As XNamespace, right As XNamespace) As Boolean
+    parameters:
+    - id: left
+      type: System.Xml.Linq.XNamespace
+      description: The first <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> to compare.
+    - id: right
+      type: System.Xml.Linq.XNamespace
+      description: The second <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> to compare.
+    return:
+      type: System.Boolean
+      description: true if left and right are equal; otherwise false.
+- uid: System.Xml.Linq.XNamespace.op_Inequality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)
+  id: op_Inequality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)
+  parent: System.Xml.Linq.XNamespace
+  langs:
+  - csharp
+  - vb
+  name: Inequality(XNamespace, XNamespace)
+  fullName: System.Xml.Linq.XNamespace.Inequality(System.Xml.Linq.XNamespace, System.Xml.Linq.XNamespace)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNamespace.cs
+    startLine: 201
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Returns a value indicating whether two instances of <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> are not equal.
+  remarks: >-
+    This overload is included to enable the comparison between
+
+    an instance of <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> and string.
+  example: []
+  syntax:
+    content: public static bool operator !=(XNamespace left, XNamespace right)
+    content.vb: Public Shared Operator <>(left As XNamespace, right As XNamespace) As Boolean
+    parameters:
+    - id: left
+      type: System.Xml.Linq.XNamespace
+      description: The first <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> to compare.
+    - id: right
+      type: System.Xml.Linq.XNamespace
+      description: The second <xref href="System.Xml.Linq.XNamespace" data-throw-if-not-resolved="false"></xref> to compare.
+    return:
+      type: System.Boolean
+      description: true if left and right are not equal; otherwise false.
+references:
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq
+- uid: System.Object
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.String
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Xml.Linq.XName
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XName
+  fullName: System.Xml.Linq.XName
+- uid: System.Xml.Linq.XNamespace
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XNamespace
+  fullName: System.Xml.Linq.XNamespace
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

@@ -1,0 +1,49 @@
+- uid: System.Xml.Linq
+  name: System.Xml.Linq
+  items:
+  - uid: System.Xml.Linq.Extensions
+    name: Extensions
+  - uid: System.Xml.Linq.LoadOptions
+    name: LoadOptions
+  - uid: System.Xml.Linq.ReaderOptions
+    name: ReaderOptions
+  - uid: System.Xml.Linq.SaveOptions
+    name: SaveOptions
+  - uid: System.Xml.Linq.XAttribute
+    name: XAttribute
+  - uid: System.Xml.Linq.XCData
+    name: XCData
+  - uid: System.Xml.Linq.XComment
+    name: XComment
+  - uid: System.Xml.Linq.XContainer
+    name: XContainer
+  - uid: System.Xml.Linq.XDeclaration
+    name: XDeclaration
+  - uid: System.Xml.Linq.XDocument
+    name: XDocument
+  - uid: System.Xml.Linq.XDocumentType
+    name: XDocumentType
+  - uid: System.Xml.Linq.XElement
+    name: XElement
+  - uid: System.Xml.Linq.XName
+    name: XName
+  - uid: System.Xml.Linq.XNamespace
+    name: XNamespace
+  - uid: System.Xml.Linq.XNode
+    name: XNode
+  - uid: System.Xml.Linq.XNodeDocumentOrderComparer
+    name: XNodeDocumentOrderComparer
+  - uid: System.Xml.Linq.XNodeEqualityComparer
+    name: XNodeEqualityComparer
+  - uid: System.Xml.Linq.XObject
+    name: XObject
+  - uid: System.Xml.Linq.XObjectChange
+    name: XObjectChange
+  - uid: System.Xml.Linq.XObjectChangeEventArgs
+    name: XObjectChangeEventArgs
+  - uid: System.Xml.Linq.XProcessingInstruction
+    name: XProcessingInstruction
+  - uid: System.Xml.Linq.XStreamingElement
+    name: XStreamingElement
+  - uid: System.Xml.Linq.XText
+    name: XText

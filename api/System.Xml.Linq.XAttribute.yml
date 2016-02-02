@@ -1,0 +1,2020 @@
+items:
+- uid: System.Xml.Linq.XAttribute
+  id: XAttribute
+  parent: System.Xml.Linq
+  children:
+  - System.Xml.Linq.XAttribute.#ctor(System.Xml.Linq.XAttribute)
+  - System.Xml.Linq.XAttribute.#ctor(System.Xml.Linq.XName,System.Object)
+  - System.Xml.Linq.XAttribute.EmptySequence
+  - System.Xml.Linq.XAttribute.IsNamespaceDeclaration
+  - System.Xml.Linq.XAttribute.Name
+  - System.Xml.Linq.XAttribute.NextAttribute
+  - System.Xml.Linq.XAttribute.NodeType
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~DateTime
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~DateTimeOffset
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~Guid
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Boolean
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Decimal
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Double
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Int32
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Int64
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{DateTime}
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{DateTimeOffset}
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{Guid}
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Boolean}
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Decimal}
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Double}
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Int32}
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Int64}
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Single}
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.UInt32}
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.UInt64}
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{TimeSpan}
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Single
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.String
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.UInt32
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.UInt64
+  - System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~TimeSpan
+  - System.Xml.Linq.XAttribute.PreviousAttribute
+  - System.Xml.Linq.XAttribute.Remove
+  - System.Xml.Linq.XAttribute.SetValue(System.Object)
+  - System.Xml.Linq.XAttribute.ToString
+  - System.Xml.Linq.XAttribute.Value
+  langs:
+  - csharp
+  - vb
+  name: XAttribute
+  fullName: System.Xml.Linq.XAttribute
+  type: Class
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 18
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Represents an XML attribute.
+  remarks: An XML attribute is a name/value pair associated with an XML element.
+  example: []
+  syntax:
+    content: 'public class XAttribute : XObject'
+    content.vb: Public Class XAttribute Inherits XObject
+  inheritance:
+  - System.Object
+  - System.Xml.Linq.XObject
+  inheritedMembers:
+  - System.Xml.Linq.XObject.BaseUri
+  - System.Xml.Linq.XObject.Document
+  - System.Xml.Linq.XObject.Parent
+  - System.Xml.Linq.XObject.AddAnnotation(System.Object)
+  - System.Xml.Linq.XObject.Annotation(Type)
+  - System.Xml.Linq.XObject.Annotation``1
+  - System.Xml.Linq.XObject.Annotations(Type)
+  - System.Xml.Linq.XObject.Annotations``1
+  - System.Xml.Linq.XObject.RemoveAnnotations(Type)
+  - System.Xml.Linq.XObject.RemoveAnnotations``1
+  - System.Xml.Linq.XObject.Changed
+  - System.Xml.Linq.XObject.Changing
+- uid: System.Xml.Linq.XAttribute.EmptySequence
+  id: EmptySequence
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: EmptySequence
+  fullName: System.Xml.Linq.XAttribute.EmptySequence
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 24
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets an empty collection of attributes.
+  example: []
+  syntax:
+    content: public static IEnumerable<XAttribute> EmptySequence { get; }
+    content.vb: Public Shared ReadOnly Property EmptySequence As IEnumerable(Of XAttribute)
+    parameters: []
+    return:
+      type: IEnumerable{System.Xml.Linq.XAttribute}
+- uid: System.Xml.Linq.XAttribute.#ctor(System.Xml.Linq.XName,System.Object)
+  id: '#ctor(System.Xml.Linq.XName,System.Object)'
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: XAttribute(XName, Object)
+  fullName: System.Xml.Linq.XAttribute.XAttribute(System.Xml.Linq.XName, System.Object)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 52
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Initializes a new instance of the <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> class from
+
+    the specified name and value.
+  example: []
+  syntax:
+    content: public XAttribute(XName name, object value)
+    content.vb: Public Sub New(name As XName, value As Object)
+    parameters:
+    - id: name
+      type: System.Xml.Linq.XName
+      description: The name of the attribute.
+    - id: value
+      type: System.Object
+      description: The value of the attribute.
+- uid: System.Xml.Linq.XAttribute.#ctor(System.Xml.Linq.XAttribute)
+  id: '#ctor(System.Xml.Linq.XAttribute)'
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: XAttribute(XAttribute)
+  fullName: System.Xml.Linq.XAttribute.XAttribute(System.Xml.Linq.XAttribute)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 70
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Initializes an instance of the XAttribute class
+
+    from another XAttribute object.
+  example: []
+  syntax:
+    content: public XAttribute(XAttribute other)
+    content.vb: Public Sub New(other As XAttribute)
+    parameters:
+    - id: other
+      type: System.Xml.Linq.XAttribute
+      description: <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> object to copy from.
+- uid: System.Xml.Linq.XAttribute.IsNamespaceDeclaration
+  id: IsNamespaceDeclaration
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: IsNamespaceDeclaration
+  fullName: System.Xml.Linq.XAttribute.IsNamespaceDeclaration
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 80
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets a value indicating if this attribute is a namespace declaration.
+  example: []
+  syntax:
+    content: public bool IsNamespaceDeclaration { get; }
+    content.vb: Public ReadOnly Property IsNamespaceDeclaration As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+- uid: System.Xml.Linq.XAttribute.Name
+  id: Name
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Name
+  fullName: System.Xml.Linq.XAttribute.Name
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 96
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the name of this attribute.
+  example: []
+  syntax:
+    content: public XName Name { get; }
+    content.vb: Public ReadOnly Property Name As XName
+    parameters: []
+    return:
+      type: System.Xml.Linq.XName
+- uid: System.Xml.Linq.XAttribute.NextAttribute
+  id: NextAttribute
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: NextAttribute
+  fullName: System.Xml.Linq.XAttribute.NextAttribute
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 108
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the next attribute of the parent element.
+  remarks: >-
+    If this attribute does not have a parent, or if there is no next attribute,
+
+    then this property returns null.
+  example: []
+  syntax:
+    content: public XAttribute NextAttribute { get; }
+    content.vb: Public ReadOnly Property NextAttribute As XAttribute
+    parameters: []
+    return:
+      type: System.Xml.Linq.XAttribute
+- uid: System.Xml.Linq.XAttribute.NodeType
+  id: NodeType
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: NodeType
+  fullName: System.Xml.Linq.XAttribute.NodeType
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 119
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the node type for this node.
+  remarks: This property will always return XmlNodeType.Attribute.
+  example: []
+  syntax:
+    content: public override XmlNodeType NodeType { get; }
+    content.vb: Public Overrides ReadOnly Property NodeType As XmlNodeType
+    parameters: []
+    return:
+      type: XmlNodeType
+  overridden: System.Xml.Linq.XObject.NodeType
+- uid: System.Xml.Linq.XAttribute.PreviousAttribute
+  id: PreviousAttribute
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: PreviousAttribute
+  fullName: System.Xml.Linq.XAttribute.PreviousAttribute
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 134
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the previous attribute of the parent element.
+  remarks: >-
+    If this attribute does not have a parent, or if there is no previous attribute,
+
+    then this property returns null.
+  example: []
+  syntax:
+    content: public XAttribute PreviousAttribute { get; }
+    content.vb: Public ReadOnly Property PreviousAttribute As XAttribute
+    parameters: []
+    return:
+      type: System.Xml.Linq.XAttribute
+- uid: System.Xml.Linq.XAttribute.Value
+  id: Value
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Value
+  fullName: System.Xml.Linq.XAttribute.Value
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 154
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets or sets the value of this attribute.
+  example: []
+  syntax:
+    content: public string Value { get; set; }
+    content.vb: Public Property Value As String
+    parameters: []
+    return:
+      type: System.String
+- uid: System.Xml.Linq.XAttribute.Remove
+  id: Remove
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Remove()
+  fullName: System.Xml.Linq.XAttribute.Remove()
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 176
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Deletes this XAttribute.
+  example: []
+  syntax:
+    content: public void Remove()
+    content.vb: Public Sub Remove
+- uid: System.Xml.Linq.XAttribute.SetValue(System.Object)
+  id: SetValue(System.Object)
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: SetValue(Object)
+  fullName: System.Xml.Linq.XAttribute.SetValue(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 195
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Sets the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref>.
+
+    <xref href="System.Xml.Linq.XElement.SetValue(System.Object)" data-throw-if-not-resolved="false"></xref><xref href="System.Xml.Linq.XElement.SetAttributeValue(System.Xml.Linq.XName,System.Object)" data-throw-if-not-resolved="false"></xref><xref href="System.Xml.Linq.XElement.SetElementValue(System.Xml.Linq.XName,System.Object)" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public void SetValue(object value)
+    content.vb: Public Sub SetValue(value As Object)
+    parameters:
+    - id: value
+      type: System.Object
+      description: >-
+        The value to assign to this attribute. The value is converted to its string
+
+        representation and assigned to the <xref href="System.Xml.Linq.XAttribute.Value" data-throw-if-not-resolved="false"></xref> property.
+- uid: System.Xml.Linq.XAttribute.ToString
+  id: ToString
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  fullName: System.Xml.Linq.XAttribute.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 205
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Override for <xref href="System.Xml.Linq.XAttribute.ToString" data-throw-if-not-resolved="false"></xref> on <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: XML text representation of an attribute and its value
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.String
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.String
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to String)
+  name.vb: Narrowing(XAttribute to String)
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.String)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.String)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 228
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:System.String" />.
+  example: []
+  syntax:
+    content: public static explicit operator string (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As String
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.String" />.
+    return:
+      type: System.String
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:System.String" />.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Boolean
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Boolean
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Boolean)
+  name.vb: Narrowing(XAttribute to Boolean)
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Boolean)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Boolean)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 247
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:System.Boolean" />.
+  example: []
+  syntax:
+    content: public static explicit operator bool (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As Boolean
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.Boolean" />.
+    return:
+      type: System.Boolean
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:System.Boolean" />.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Boolean}
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Boolean}
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Nullable<Boolean>)
+  name.vb: Narrowing(XAttribute to Nullable(Of Boolean))
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Nullable<System.Boolean>)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Nullable(Of System.Boolean))
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 263
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:System.Boolean" />?.
+  example: []
+  syntax:
+    content: public static explicit operator bool ? (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As Boolean?
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.Boolean" />?. Can be null.
+    return:
+      type: System.Nullable{System.Boolean}
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:System.Boolean" />?.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Int32
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Int32
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Int32)
+  name.vb: Narrowing(XAttribute to Int32)
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Int32)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Int32)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 282
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to an <see cref="!:System.Int32" />.
+  example: []
+  syntax:
+    content: public static explicit operator int (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As Integer
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.Int32" />.
+    return:
+      type: System.Int32
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as an <see cref="!:System.Int32" />.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Int32}
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Int32}
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Nullable<Int32>)
+  name.vb: Narrowing(XAttribute to Nullable(Of Int32))
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Nullable<System.Int32>)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Nullable(Of System.Int32))
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 298
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to an <see cref="!:System.Int32" />?.
+  example: []
+  syntax:
+    content: public static explicit operator int ? (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As Integer?
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.Int32" />?. Can be null.
+    return:
+      type: System.Nullable{System.Int32}
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as an <see cref="!:System.Int32" />?.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.UInt32
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.UInt32
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to UInt32)
+  name.vb: Narrowing(XAttribute to UInt32)
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.UInt32)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.UInt32)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 317
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to an <see cref="!:System.UInt32" />.
+  example: []
+  syntax:
+    content: public static explicit operator uint (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As UInteger
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.UInt32" />.
+    return:
+      type: System.UInt32
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as an <see cref="!:System.UInt32" />.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.UInt32}
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.UInt32}
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Nullable<UInt32>)
+  name.vb: Narrowing(XAttribute to Nullable(Of UInt32))
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Nullable<System.UInt32>)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Nullable(Of System.UInt32))
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 333
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to an <see cref="!:System.UInt32" />?.
+  example: []
+  syntax:
+    content: public static explicit operator uint ? (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As UInteger?
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.UInt32" />?. Can be null.
+    return:
+      type: System.Nullable{System.UInt32}
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as an <see cref="!:System.UInt32" />?.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Int64
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Int64
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Int64)
+  name.vb: Narrowing(XAttribute to Int64)
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Int64)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Int64)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 352
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:System.Int64" />.
+  example: []
+  syntax:
+    content: public static explicit operator long (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As Long
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.Int64" />.
+    return:
+      type: System.Int64
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:System.Int64" />.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Int64}
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Int64}
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Nullable<Int64>)
+  name.vb: Narrowing(XAttribute to Nullable(Of Int64))
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Nullable<System.Int64>)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Nullable(Of System.Int64))
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 368
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:System.Int64" />?.
+  example: []
+  syntax:
+    content: public static explicit operator long ? (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As Long?
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.Int64" />?. Can be null.
+    return:
+      type: System.Nullable{System.Int64}
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:System.Int64" />?.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.UInt64
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.UInt64
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to UInt64)
+  name.vb: Narrowing(XAttribute to UInt64)
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.UInt64)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.UInt64)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 387
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to an <see cref="!:System.UInt64" />.
+  example: []
+  syntax:
+    content: public static explicit operator ulong (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As ULong
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.UInt64" />.
+    return:
+      type: System.UInt64
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as an <see cref="!:System.UInt64" />.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.UInt64}
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.UInt64}
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Nullable<UInt64>)
+  name.vb: Narrowing(XAttribute to Nullable(Of UInt64))
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Nullable<System.UInt64>)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Nullable(Of System.UInt64))
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 403
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to an <see cref="!:System.UInt64" />?.
+  example: []
+  syntax:
+    content: public static explicit operator ulong ? (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As ULong?
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.UInt64" />?. Can be null.
+    return:
+      type: System.Nullable{System.UInt64}
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as an <see cref="!:System.UInt64" />?.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Single
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Single
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Single)
+  name.vb: Narrowing(XAttribute to Single)
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Single)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Single)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 422
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:System.Single" />.
+  example: []
+  syntax:
+    content: public static explicit operator float (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As Single
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.Single" />.
+    return:
+      type: System.Single
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:System.Single" />.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Single}
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Single}
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Nullable<Single>)
+  name.vb: Narrowing(XAttribute to Nullable(Of Single))
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Nullable<System.Single>)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Nullable(Of System.Single))
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 438
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:System.Single" />?.
+  example: []
+  syntax:
+    content: public static explicit operator float ? (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As Single?
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.Single" />?. Can be null.
+    return:
+      type: System.Nullable{System.Single}
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:System.Single" />?.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Double
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Double
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Double)
+  name.vb: Narrowing(XAttribute to Double)
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Double)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Double)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 457
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:System.Double" />.
+  example: []
+  syntax:
+    content: public static explicit operator double (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As Double
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.Double" />.
+    return:
+      type: System.Double
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:System.Double" />.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Double}
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Double}
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Nullable<Double>)
+  name.vb: Narrowing(XAttribute to Nullable(Of Double))
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Nullable<System.Double>)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Nullable(Of System.Double))
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 473
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:System.Double" />?.
+  example: []
+  syntax:
+    content: public static explicit operator double ? (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As Double?
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.Double" />?. Can be null.
+    return:
+      type: System.Nullable{System.Double}
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:System.Double" />?.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Decimal
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Decimal
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Decimal)
+  name.vb: Narrowing(XAttribute to Decimal)
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Decimal)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Decimal)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 492
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:System.Decimal" />.
+  example: []
+  syntax:
+    content: public static explicit operator decimal (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As Decimal
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.Decimal" />.
+    return:
+      type: System.Decimal
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:System.Decimal" />.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Decimal}
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Decimal}
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Nullable<Decimal>)
+  name.vb: Narrowing(XAttribute to Nullable(Of Decimal))
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Nullable<System.Decimal>)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Nullable(Of System.Decimal))
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 508
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:System.Decimal" />?.
+  example: []
+  syntax:
+    content: public static explicit operator decimal ? (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As Decimal?
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:System.Decimal" />?. Can be null.
+    return:
+      type: System.Nullable{System.Decimal}
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:System.Decimal" />?.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~DateTime
+  id: op_Explicit(System.Xml.Linq.XAttribute)~DateTime
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to DateTime)
+  name.vb: Narrowing(XAttribute to DateTime)
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to DateTime)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to DateTime)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 527
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:DateTime" />.
+  example: []
+  syntax:
+    content: public static explicit operator DateTime(XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As DateTime
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:DateTime" />.
+    return:
+      type: DateTime
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:DateTime" />.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{DateTime}
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{DateTime}
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Nullable<DateTime>)
+  name.vb: Narrowing(XAttribute to Nullable(Of DateTime))
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Nullable<DateTime>)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Nullable(Of DateTime))
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 543
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:DateTime" />?.
+  example: []
+  syntax:
+    content: public static explicit operator DateTime? (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As DateTime?
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:DateTime" />?. Can be null.
+    return:
+      type: System.Nullable{DateTime}
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:DateTime" />?.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~DateTimeOffset
+  id: op_Explicit(System.Xml.Linq.XAttribute)~DateTimeOffset
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to DateTimeOffset)
+  name.vb: Narrowing(XAttribute to DateTimeOffset)
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to DateTimeOffset)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to DateTimeOffset)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 562
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:DateTimeOffset" />.
+  example: []
+  syntax:
+    content: public static explicit operator DateTimeOffset(XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As DateTimeOffset
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:DateTimeOffset" />.
+    return:
+      type: DateTimeOffset
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:DateTimeOffset" />.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{DateTimeOffset}
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{DateTimeOffset}
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Nullable<DateTimeOffset>)
+  name.vb: Narrowing(XAttribute to Nullable(Of DateTimeOffset))
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Nullable<DateTimeOffset>)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Nullable(Of DateTimeOffset))
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 578
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:DateTimeOffset" />?.
+  example: []
+  syntax:
+    content: public static explicit operator DateTimeOffset? (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As DateTimeOffset?
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:DateTimeOffset" />?. Can be null.
+    return:
+      type: System.Nullable{DateTimeOffset}
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:DateTimeOffset" />?.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~TimeSpan
+  id: op_Explicit(System.Xml.Linq.XAttribute)~TimeSpan
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to TimeSpan)
+  name.vb: Narrowing(XAttribute to TimeSpan)
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to TimeSpan)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to TimeSpan)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 597
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:TimeSpan" />.
+  example: []
+  syntax:
+    content: public static explicit operator TimeSpan(XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As TimeSpan
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:TimeSpan" />.
+    return:
+      type: TimeSpan
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:TimeSpan" />.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{TimeSpan}
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{TimeSpan}
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Nullable<TimeSpan>)
+  name.vb: Narrowing(XAttribute to Nullable(Of TimeSpan))
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Nullable<TimeSpan>)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Nullable(Of TimeSpan))
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 613
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:TimeSpan" />?.
+  example: []
+  syntax:
+    content: public static explicit operator TimeSpan? (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As TimeSpan?
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:TimeSpan" />?. Can be null.
+    return:
+      type: System.Nullable{TimeSpan}
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:TimeSpan" />?.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~Guid
+  id: op_Explicit(System.Xml.Linq.XAttribute)~Guid
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Guid)
+  name.vb: Narrowing(XAttribute to Guid)
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to Guid)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to Guid)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 632
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:Guid" />.
+  example: []
+  syntax:
+    content: public static explicit operator Guid(XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As Guid
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:Guid" />.
+    return:
+      type: Guid
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:Guid" />.
+- uid: System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{Guid}
+  id: op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{Guid}
+  parent: System.Xml.Linq.XAttribute
+  langs:
+  - csharp
+  - vb
+  name: Explicit(XAttribute to Nullable<Guid>)
+  name.vb: Narrowing(XAttribute to Nullable(Of Guid))
+  fullName: System.Xml.Linq.XAttribute.Explicit(System.Xml.Linq.XAttribute to System.Nullable<Guid>)
+  fullName.vb: System.Xml.Linq.XAttribute.Narrowing(System.Xml.Linq.XAttribute to System.Nullable(Of Guid))
+  type: Operator
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XAttribute.cs
+    startLine: 648
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Cast the value of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to a <see cref="!:Guid" />?.
+  example: []
+  syntax:
+    content: public static explicit operator Guid? (XAttribute attribute)
+    content.vb: Public Shared Narrowing Operator CType(attribute As XAttribute) As Guid?
+    parameters:
+    - id: attribute
+      type: System.Xml.Linq.XAttribute
+      description: The <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> to cast to <see cref="!:Guid" />?. Can be null.
+    return:
+      type: System.Nullable{Guid}
+      description: The content of this <xref href="System.Xml.Linq.XAttribute" data-throw-if-not-resolved="false"></xref> as a <see cref="!:Guid" />?.
+references:
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq
+- uid: System.Object
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Xml.Linq.XObject
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XObject
+  fullName: System.Xml.Linq.XObject
+- uid: System.Xml.Linq.XObject.BaseUri
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: BaseUri
+  fullName: System.Xml.Linq.XObject.BaseUri
+- uid: System.Xml.Linq.XObject.Document
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: Document
+  fullName: System.Xml.Linq.XObject.Document
+- uid: System.Xml.Linq.XObject.Parent
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: Parent
+  fullName: System.Xml.Linq.XObject.Parent
+- uid: System.Xml.Linq.XObject.AddAnnotation(System.Object)
+  parent: System.Xml.Linq.XObject
+  isExternal: true
+  name: AddAnnotation(Object)
+  fullName: System.Xml.Linq.XObject.AddAnnotation(System.Object)
+  spec.csharp:
+  - uid: System.Xml.Linq.XObject.AddAnnotation(System.Object)
+    name: AddAnnotation
+    fullName: System.Xml.Linq.XObject.AddAnnotation
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XObject.AddAnnotation(System.Object)
+    name: AddAnnotation
+    fullName: System.Xml.Linq.XObject.AddAnnotation
+  - name: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XObject.Annotation(Type)
+  parent: System.Xml.Linq.XObject
+  isExternal: true
+  name: Annotation(Type)
+  fullName: System.Xml.Linq.XObject.Annotation(Type)
+  spec.csharp:
+  - uid: System.Xml.Linq.XObject.Annotation(Type)
+    name: Annotation
+    fullName: System.Xml.Linq.XObject.Annotation
+  - name: (
+    fullName: (
+  - uid: Type
+    name: Type
+    fullName: Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XObject.Annotation(Type)
+    name: Annotation
+    fullName: System.Xml.Linq.XObject.Annotation
+  - name: (
+    fullName: (
+  - uid: Type
+    name: Type
+    fullName: Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XObject.Annotation``1
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: Annotation<T>()
+  fullName: System.Xml.Linq.XObject.Annotation<T>()
+  fullname.vb: System.Xml.Linq.XObject.Annotation(Of T)()
+  name.vb: Annotation(Of T)()
+  spec.csharp:
+  - uid: System.Xml.Linq.XObject.Annotation``1
+    name: Annotation<T>
+    fullName: System.Xml.Linq.XObject.Annotation<T>
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XObject.Annotation``1
+    name: Annotation(Of T)
+    fullName: System.Xml.Linq.XObject.Annotation(Of T)
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XObject.Annotations(Type)
+  parent: System.Xml.Linq.XObject
+  isExternal: true
+  name: Annotations(Type)
+  fullName: System.Xml.Linq.XObject.Annotations(Type)
+  spec.csharp:
+  - uid: System.Xml.Linq.XObject.Annotations(Type)
+    name: Annotations
+    fullName: System.Xml.Linq.XObject.Annotations
+  - name: (
+    fullName: (
+  - uid: Type
+    name: Type
+    fullName: Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XObject.Annotations(Type)
+    name: Annotations
+    fullName: System.Xml.Linq.XObject.Annotations
+  - name: (
+    fullName: (
+  - uid: Type
+    name: Type
+    fullName: Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XObject.Annotations``1
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: Annotations<T>()
+  fullName: System.Xml.Linq.XObject.Annotations<T>()
+  fullname.vb: System.Xml.Linq.XObject.Annotations(Of T)()
+  name.vb: Annotations(Of T)()
+  spec.csharp:
+  - uid: System.Xml.Linq.XObject.Annotations``1
+    name: Annotations<T>
+    fullName: System.Xml.Linq.XObject.Annotations<T>
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XObject.Annotations``1
+    name: Annotations(Of T)
+    fullName: System.Xml.Linq.XObject.Annotations(Of T)
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XObject.RemoveAnnotations(Type)
+  parent: System.Xml.Linq.XObject
+  isExternal: true
+  name: RemoveAnnotations(Type)
+  fullName: System.Xml.Linq.XObject.RemoveAnnotations(Type)
+  spec.csharp:
+  - uid: System.Xml.Linq.XObject.RemoveAnnotations(Type)
+    name: RemoveAnnotations
+    fullName: System.Xml.Linq.XObject.RemoveAnnotations
+  - name: (
+    fullName: (
+  - uid: Type
+    name: Type
+    fullName: Type
+    isExternal: true
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XObject.RemoveAnnotations(Type)
+    name: RemoveAnnotations
+    fullName: System.Xml.Linq.XObject.RemoveAnnotations
+  - name: (
+    fullName: (
+  - uid: Type
+    name: Type
+    fullName: Type
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XObject.RemoveAnnotations``1
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: RemoveAnnotations<T>()
+  fullName: System.Xml.Linq.XObject.RemoveAnnotations<T>()
+  fullname.vb: System.Xml.Linq.XObject.RemoveAnnotations(Of T)()
+  name.vb: RemoveAnnotations(Of T)()
+  spec.csharp:
+  - uid: System.Xml.Linq.XObject.RemoveAnnotations``1
+    name: RemoveAnnotations<T>
+    fullName: System.Xml.Linq.XObject.RemoveAnnotations<T>
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.Linq.XObject.RemoveAnnotations``1
+    name: RemoveAnnotations(Of T)
+    fullName: System.Xml.Linq.XObject.RemoveAnnotations(Of T)
+  - name: (
+    fullName: (
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XObject.Changed
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: Changed
+  fullName: System.Xml.Linq.XObject.Changed
+- uid: System.Xml.Linq.XObject.Changing
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: Changing
+  fullName: System.Xml.Linq.XObject.Changing
+- uid: IEnumerable{System.Xml.Linq.XAttribute}
+  definition: IEnumerable`1
+  name: IEnumerable<XAttribute>
+  fullName: IEnumerable<System.Xml.Linq.XAttribute>
+  fullname.vb: IEnumerable(Of System.Xml.Linq.XAttribute)
+  name.vb: IEnumerable(Of XAttribute)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Xml.Linq.XAttribute
+    name: XAttribute
+    fullName: System.Xml.Linq.XAttribute
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Xml.Linq.XAttribute
+    name: XAttribute
+    fullName: System.Xml.Linq.XAttribute
+  - name: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  fullName: IEnumerable<>
+  fullname.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XAttribute
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XAttribute
+  fullName: System.Xml.Linq.XAttribute
+- uid: System.Xml.Linq.XName
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XName
+  fullName: System.Xml.Linq.XName
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Xml.Linq.XObject.NodeType
+  parent: System.Xml.Linq.XObject
+  isExternal: false
+  name: NodeType
+  fullName: System.Xml.Linq.XObject.NodeType
+- uid: XmlNodeType
+  isExternal: true
+  name: XmlNodeType
+  fullName: XmlNodeType
+- uid: System.String
+  isExternal: true
+  name: String
+  fullName: System.String
+- uid: System.Xml.Linq.XAttribute.Value
+- uid: System.Xml.Linq.XElement.SetValue(System.Object)
+- uid: System.Xml.Linq.XElement.SetAttributeValue(System.Xml.Linq.XName,System.Object)
+- uid: System.Xml.Linq.XElement.SetElementValue(System.Xml.Linq.XName,System.Object)
+- uid: System.Xml.Linq.XAttribute.ToString
+- uid: System.Nullable{System.Boolean}
+  definition: System.Nullable`1
+  name: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  fullname.vb: System.Nullable(Of System.Boolean)
+  name.vb: Nullable(Of Boolean)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Nullable`1
+  isExternal: true
+  name: Nullable<>
+  fullName: System.Nullable<>
+  fullname.vb: System.Nullable(Of )
+  name.vb: Nullable(Of )
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: )
+    fullName: )
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  fullName: System.Int32
+- uid: System.Nullable{System.Int32}
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  fullname.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.UInt32
+  isExternal: true
+  name: UInt32
+  fullName: System.UInt32
+- uid: System.Nullable{System.UInt32}
+  definition: System.Nullable`1
+  name: Nullable<UInt32>
+  fullName: System.Nullable<System.UInt32>
+  fullname.vb: System.Nullable(Of System.UInt32)
+  name.vb: Nullable(Of UInt32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.UInt32
+    name: UInt32
+    fullName: System.UInt32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.UInt32
+    name: UInt32
+    fullName: System.UInt32
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Int64
+  isExternal: true
+  name: Int64
+  fullName: System.Int64
+- uid: System.Nullable{System.Int64}
+  definition: System.Nullable`1
+  name: Nullable<Int64>
+  fullName: System.Nullable<System.Int64>
+  fullname.vb: System.Nullable(Of System.Int64)
+  name.vb: Nullable(Of Int64)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.UInt64
+  isExternal: true
+  name: UInt64
+  fullName: System.UInt64
+- uid: System.Nullable{System.UInt64}
+  definition: System.Nullable`1
+  name: Nullable<UInt64>
+  fullName: System.Nullable<System.UInt64>
+  fullname.vb: System.Nullable(Of System.UInt64)
+  name.vb: Nullable(Of UInt64)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.UInt64
+    name: UInt64
+    fullName: System.UInt64
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.UInt64
+    name: UInt64
+    fullName: System.UInt64
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Single
+  isExternal: true
+  name: Single
+  fullName: System.Single
+- uid: System.Nullable{System.Single}
+  definition: System.Nullable`1
+  name: Nullable<Single>
+  fullName: System.Nullable<System.Single>
+  fullname.vb: System.Nullable(Of System.Single)
+  name.vb: Nullable(Of Single)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Double
+  isExternal: true
+  name: Double
+  fullName: System.Double
+- uid: System.Nullable{System.Double}
+  definition: System.Nullable`1
+  name: Nullable<Double>
+  fullName: System.Nullable<System.Double>
+  fullname.vb: System.Nullable(Of System.Double)
+  name.vb: Nullable(Of Double)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Double
+    name: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Double
+    name: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: System.Decimal
+  isExternal: true
+  name: Decimal
+  fullName: System.Decimal
+- uid: System.Nullable{System.Decimal}
+  definition: System.Nullable`1
+  name: Nullable<Decimal>
+  fullName: System.Nullable<System.Decimal>
+  fullname.vb: System.Nullable(Of System.Decimal)
+  name.vb: Nullable(Of Decimal)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Decimal
+    name: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  fullName: DateTime
+- uid: System.Nullable{DateTime}
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  fullName: System.Nullable<DateTime>
+  fullname.vb: System.Nullable(Of DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: DateTime
+    name: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: DateTime
+    name: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: DateTimeOffset
+  isExternal: true
+  name: DateTimeOffset
+  fullName: DateTimeOffset
+- uid: System.Nullable{DateTimeOffset}
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  fullName: System.Nullable<DateTimeOffset>
+  fullname.vb: System.Nullable(Of DateTimeOffset)
+  name.vb: Nullable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: DateTimeOffset
+    name: DateTimeOffset
+    fullName: DateTimeOffset
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: DateTimeOffset
+    name: DateTimeOffset
+    fullName: DateTimeOffset
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  fullName: TimeSpan
+- uid: System.Nullable{TimeSpan}
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  fullName: System.Nullable<TimeSpan>
+  fullname.vb: System.Nullable(Of TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: TimeSpan
+    name: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: TimeSpan
+    name: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: )
+    fullName: )
+- uid: Guid
+  isExternal: true
+  name: Guid
+  fullName: Guid
+- uid: System.Nullable{Guid}
+  definition: System.Nullable`1
+  name: Nullable<Guid>
+  fullName: System.Nullable<Guid>
+  fullname.vb: System.Nullable(Of Guid)
+  name.vb: Nullable(Of Guid)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: Guid
+    name: Guid
+    fullName: Guid
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: Guid
+    name: Guid
+    fullName: Guid
+    isExternal: true
+  - name: )
+    fullName: )

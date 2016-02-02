@@ -1,0 +1,236 @@
+items:
+- uid: System.Xml.Linq.XNodeEqualityComparer
+  id: XNodeEqualityComparer
+  parent: System.Xml.Linq
+  children:
+  - System.Xml.Linq.XNodeEqualityComparer.Equals(System.Xml.Linq.XNode,System.Xml.Linq.XNode)
+  - System.Xml.Linq.XNodeEqualityComparer.GetHashCode(System.Xml.Linq.XNode)
+  langs:
+  - csharp
+  - vb
+  name: XNodeEqualityComparer
+  fullName: System.Xml.Linq.XNodeEqualityComparer
+  type: Class
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNodeEqualityComparer.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNodeEqualityComparer.cs
+    startLine: 14
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Contains functionality to compare nodes for value equality.
+
+    This class cannot be inherited.
+  example: []
+  syntax:
+    content: 'public sealed class XNodeEqualityComparer : IEqualityComparer, IEqualityComparer<XNode>'
+    content.vb: Public NotInheritable Class XNodeEqualityComparer Inherits IEqualityComparer Implements IEqualityComparer(Of XNode)
+  inheritance:
+  - System.Object
+  implements:
+  - IEqualityComparer{System.Xml.Linq.XNode}
+- uid: System.Xml.Linq.XNodeEqualityComparer.Equals(System.Xml.Linq.XNode,System.Xml.Linq.XNode)
+  id: Equals(System.Xml.Linq.XNode,System.Xml.Linq.XNode)
+  parent: System.Xml.Linq.XNodeEqualityComparer
+  langs:
+  - csharp
+  - vb
+  name: Equals(XNode, XNode)
+  fullName: System.Xml.Linq.XNodeEqualityComparer.Equals(System.Xml.Linq.XNode, System.Xml.Linq.XNode)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNodeEqualityComparer.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNodeEqualityComparer.cs
+    startLine: 37
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Compares the values of two nodes.
+  remarks: >-
+    A null node is equal to another null node but unequal to a non-null
+
+    node. Two <xref href="System.Xml.Linq.XNode" data-throw-if-not-resolved="false"></xref>s of different types are never equal. Two
+
+    <xref href="System.Xml.Linq.XText" data-throw-if-not-resolved="false"></xref> nodes are equal if they contain the same text. Two
+
+    <xref href="System.Xml.Linq.XElement" data-throw-if-not-resolved="false"></xref> nodes are equal if they have the same tag name, the same
+
+    set of attributes with the same values, and, ignoring comments and processing
+
+    instructions, contain two equal length sequences of pairwise equal content nodes.
+
+    Two <xref href="System.Xml.Linq.XDocument" data-throw-if-not-resolved="false"></xref>s are equal if their root nodes are equal. Two
+
+    <xref href="System.Xml.Linq.XComment" data-throw-if-not-resolved="false"></xref> nodes are equal if they contain the same comment text.
+
+    Two <xref href="System.Xml.Linq.XProcessingInstruction" data-throw-if-not-resolved="false"></xref> nodes are equal if they have the same
+
+    target and data. Two <xref href="System.Xml.Linq.XDocumentType" data-throw-if-not-resolved="false"></xref> nodes are equal if the have the
+
+    same name, public id, system id, and internal subset.
+  example: []
+  syntax:
+    content: public bool Equals(XNode x, XNode y)
+    content.vb: Public Function Equals(x As XNode, y As XNode) As Boolean
+    parameters:
+    - id: x
+      type: System.Xml.Linq.XNode
+      description: The first node to compare.
+    - id: y
+      type: System.Xml.Linq.XNode
+      description: The second node to compare.
+    return:
+      type: System.Boolean
+      description: true if the nodes are equal, false otherwise.
+- uid: System.Xml.Linq.XNodeEqualityComparer.GetHashCode(System.Xml.Linq.XNode)
+  id: GetHashCode(System.Xml.Linq.XNode)
+  parent: System.Xml.Linq.XNodeEqualityComparer
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode(XNode)
+  fullName: System.Xml.Linq.XNodeEqualityComparer.GetHashCode(System.Xml.Linq.XNode)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XNodeEqualityComparer.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XNodeEqualityComparer.cs
+    startLine: 52
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Returns a hash code based on an <xref href="System.Xml.Linq.XNode" data-throw-if-not-resolved="false"></xref> objects value.
+  remarks: >-
+    The <xref href="System.Xml.Linq.XNode" data-throw-if-not-resolved="false"></xref> class's implementation of <see cref="!:Object.GetHashCode" />
+
+    is based on the referential identity of the node. This method computes a
+
+    hash code based on the value of the node.
+  example: []
+  syntax:
+    content: public int GetHashCode(XNode obj)
+    content.vb: Public Function GetHashCode(obj As XNode) As Integer
+    parameters:
+    - id: obj
+      type: System.Xml.Linq.XNode
+      description: The node to hash.
+    return:
+      type: System.Int32
+      description: A value-based hash code for the node.
+references:
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq
+- uid: System.Object
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: IEqualityComparer{System.Xml.Linq.XNode}
+  definition: IEqualityComparer`1
+  name: IEqualityComparer<XNode>
+  fullName: IEqualityComparer<System.Xml.Linq.XNode>
+  fullname.vb: IEqualityComparer(Of System.Xml.Linq.XNode)
+  name.vb: IEqualityComparer(Of XNode)
+  spec.csharp:
+  - uid: IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: IEqualityComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - uid: System.Xml.Linq.XNode
+    name: XNode
+    fullName: System.Xml.Linq.XNode
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - uid: System.Xml.Linq.XNode
+    name: XNode
+    fullName: System.Xml.Linq.XNode
+  - name: )
+    fullName: )
+- uid: IEqualityComparer`1
+  isExternal: true
+  name: IEqualityComparer<>
+  fullName: IEqualityComparer<>
+  fullname.vb: IEqualityComparer(Of )
+  name.vb: IEqualityComparer(Of )
+  spec.csharp:
+  - uid: IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: IEqualityComparer
+    isExternal: true
+  - name: <
+    fullName: <
+  - {}
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEqualityComparer`1
+    name: IEqualityComparer
+    fullName: IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    fullName: '(Of '
+  - {}
+  - name: )
+    fullName: )
+- uid: System.Xml.Linq.XNode
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XNode
+  fullName: System.Xml.Linq.XNode
+- uid: System.Xml.Linq.XText
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XText
+  fullName: System.Xml.Linq.XText
+- uid: System.Xml.Linq.XElement
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XElement
+  fullName: System.Xml.Linq.XElement
+- uid: System.Xml.Linq.XDocument
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XDocument
+  fullName: System.Xml.Linq.XDocument
+- uid: System.Xml.Linq.XComment
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XComment
+  fullName: System.Xml.Linq.XComment
+- uid: System.Xml.Linq.XProcessingInstruction
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XProcessingInstruction
+  fullName: System.Xml.Linq.XProcessingInstruction
+- uid: System.Xml.Linq.XDocumentType
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XDocumentType
+  fullName: System.Xml.Linq.XDocumentType
+- uid: System.Boolean
+  isExternal: true
+  name: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  fullName: System.Int32

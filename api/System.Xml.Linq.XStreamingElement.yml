@@ -1,0 +1,537 @@
+items:
+- uid: System.Xml.Linq.XStreamingElement
+  id: XStreamingElement
+  parent: System.Xml.Linq
+  children:
+  - System.Xml.Linq.XStreamingElement.#ctor(System.Xml.Linq.XName)
+  - System.Xml.Linq.XStreamingElement.#ctor(System.Xml.Linq.XName,System.Object)
+  - System.Xml.Linq.XStreamingElement.#ctor(System.Xml.Linq.XName,System.Object[])
+  - System.Xml.Linq.XStreamingElement.Add(System.Object)
+  - System.Xml.Linq.XStreamingElement.Add(System.Object[])
+  - System.Xml.Linq.XStreamingElement.Name
+  - System.Xml.Linq.XStreamingElement.Save(Stream)
+  - System.Xml.Linq.XStreamingElement.Save(Stream,System.Xml.Linq.SaveOptions)
+  - System.Xml.Linq.XStreamingElement.Save(TextWriter)
+  - System.Xml.Linq.XStreamingElement.Save(TextWriter,System.Xml.Linq.SaveOptions)
+  - System.Xml.Linq.XStreamingElement.Save(XmlWriter)
+  - System.Xml.Linq.XStreamingElement.ToString
+  - System.Xml.Linq.XStreamingElement.ToString(System.Xml.Linq.SaveOptions)
+  - System.Xml.Linq.XStreamingElement.WriteTo(XmlWriter)
+  langs:
+  - csharp
+  - vb
+  name: XStreamingElement
+  fullName: System.Xml.Linq.XStreamingElement
+  type: Class
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+    startLine: 15
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Represents a class that allows elements to be streamed
+
+    on input and output.
+  example: []
+  syntax:
+    content: 'public class XStreamingElement : object'
+    content.vb: Public Class XStreamingElement Inherits Object
+  inheritance:
+  - System.Object
+- uid: System.Xml.Linq.XStreamingElement.#ctor(System.Xml.Linq.XName)
+  id: '#ctor(System.Xml.Linq.XName)'
+  parent: System.Xml.Linq.XStreamingElement
+  langs:
+  - csharp
+  - vb
+  name: XStreamingElement(XName)
+  fullName: System.Xml.Linq.XStreamingElement.XStreamingElement(System.Xml.Linq.XName)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+    startLine: 24
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Creates a <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref> node with a given name
+  example: []
+  syntax:
+    content: public XStreamingElement(XName name)
+    content.vb: Public Sub New(name As XName)
+    parameters:
+    - id: name
+      type: System.Xml.Linq.XName
+      description: The name to assign to the new <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref> node
+- uid: System.Xml.Linq.XStreamingElement.#ctor(System.Xml.Linq.XName,System.Object)
+  id: '#ctor(System.Xml.Linq.XName,System.Object)'
+  parent: System.Xml.Linq.XStreamingElement
+  langs:
+  - csharp
+  - vb
+  name: XStreamingElement(XName, Object)
+  fullName: System.Xml.Linq.XStreamingElement.XStreamingElement(System.Xml.Linq.XName, System.Object)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+    startLine: 35
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Creates a <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref> node with a given name and content
+  example: []
+  syntax:
+    content: public XStreamingElement(XName name, object content)
+    content.vb: Public Sub New(name As XName, content As Object)
+    parameters:
+    - id: name
+      type: System.Xml.Linq.XName
+      description: The name to assign to the new <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref> node
+    - id: content
+      type: System.Object
+      description: The content to assign to the new <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref> node
+- uid: System.Xml.Linq.XStreamingElement.#ctor(System.Xml.Linq.XName,System.Object[])
+  id: '#ctor(System.Xml.Linq.XName,System.Object[])'
+  parent: System.Xml.Linq.XStreamingElement
+  langs:
+  - csharp
+  - vb
+  name: XStreamingElement(XName, Object[])
+  name.vb: XStreamingElement(XName, Object())
+  fullName: System.Xml.Linq.XStreamingElement.XStreamingElement(System.Xml.Linq.XName, System.Object[])
+  fullName.vb: System.Xml.Linq.XStreamingElement.XStreamingElement(System.Xml.Linq.XName, System.Object())
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+    startLine: 46
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Creates a <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref> node with a given name and content
+  example: []
+  syntax:
+    content: public XStreamingElement(XName name, params object[] content)
+    content.vb: Public Sub New(name As XName, ParamArray content As Object())
+    parameters:
+    - id: name
+      type: System.Xml.Linq.XName
+      description: The name to assign to the new <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref> node
+    - id: content
+      type: System.Object[]
+      description: An array containing content to assign to the new <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref> node
+- uid: System.Xml.Linq.XStreamingElement.Name
+  id: Name
+  parent: System.Xml.Linq.XStreamingElement
+  langs:
+  - csharp
+  - vb
+  name: Name
+  fullName: System.Xml.Linq.XStreamingElement.Name
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+    startLine: 55
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets or sets the name of this streaming element.
+  example: []
+  syntax:
+    content: public XName Name { get; set; }
+    content.vb: Public Property Name As XName
+    parameters: []
+    return:
+      type: System.Xml.Linq.XName
+- uid: System.Xml.Linq.XStreamingElement.Add(System.Object)
+  id: Add(System.Object)
+  parent: System.Xml.Linq.XStreamingElement
+  langs:
+  - csharp
+  - vb
+  name: Add(Object)
+  fullName: System.Xml.Linq.XStreamingElement.Add(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+    startLine: 72
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Add content to an <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public void Add(object content)
+    content.vb: Public Sub Add(content As Object)
+    parameters:
+    - id: content
+      type: System.Object
+      description: Object containing content to add
+- uid: System.Xml.Linq.XStreamingElement.Add(System.Object[])
+  id: Add(System.Object[])
+  parent: System.Xml.Linq.XStreamingElement
+  langs:
+  - csharp
+  - vb
+  name: Add(Object[])
+  name.vb: Add(Object())
+  fullName: System.Xml.Linq.XStreamingElement.Add(System.Object[])
+  fullName.vb: System.Xml.Linq.XStreamingElement.Add(System.Object())
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+    startLine: 91
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Add content to an <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public void Add(params object[] content)
+    content.vb: Public Sub Add(ParamArray content As Object())
+    parameters:
+    - id: content
+      type: System.Object[]
+      description: array of objects containing content to add
+- uid: System.Xml.Linq.XStreamingElement.Save(Stream)
+  id: Save(Stream)
+  parent: System.Xml.Linq.XStreamingElement
+  langs:
+  - csharp
+  - vb
+  name: Save(Stream)
+  fullName: System.Xml.Linq.XStreamingElement.Save(Stream)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+    startLine: 101
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Save the contents of an <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref> to a <see cref="!:Stream" />
+
+    with formatting.
+  example: []
+  syntax:
+    content: public void Save(Stream stream)
+    content.vb: Public Sub Save(stream As Stream)
+    parameters:
+    - id: stream
+      type: Stream
+      description: <see cref="!:Stream" /> to write to
+- uid: System.Xml.Linq.XStreamingElement.Save(Stream,System.Xml.Linq.SaveOptions)
+  id: Save(Stream,System.Xml.Linq.SaveOptions)
+  parent: System.Xml.Linq.XStreamingElement
+  langs:
+  - csharp
+  - vb
+  name: Save(Stream, SaveOptions)
+  fullName: System.Xml.Linq.XStreamingElement.Save(Stream, System.Xml.Linq.SaveOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+    startLine: 115
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Save the contents of an <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref> to a <see cref="!:Stream" />,
+
+    optionally formatting.
+  example: []
+  syntax:
+    content: public void Save(Stream stream, SaveOptions options)
+    content.vb: Public Sub Save(stream As Stream, options As SaveOptions)
+    parameters:
+    - id: stream
+      type: Stream
+      description: <see cref="!:Stream" /> to write to
+    - id: options
+      type: System.Xml.Linq.SaveOptions
+      description: >-
+        If SaveOptions.DisableFormatting is enabled the output is not indented.
+
+        If SaveOptions.OmitDuplicateNamespaces is enabled duplicate namespace declarations will be removed.
+- uid: System.Xml.Linq.XStreamingElement.Save(TextWriter)
+  id: Save(TextWriter)
+  parent: System.Xml.Linq.XStreamingElement
+  langs:
+  - csharp
+  - vb
+  name: Save(TextWriter)
+  fullName: System.Xml.Linq.XStreamingElement.Save(TextWriter)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+    startLine: 129
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Save the contents of an <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref> to a text writer
+
+    with formatting.
+  example: []
+  syntax:
+    content: public void Save(TextWriter textWriter)
+    content.vb: Public Sub Save(textWriter As TextWriter)
+    parameters:
+    - id: textWriter
+      type: TextWriter
+      description: <see cref="!:TextWriter" /> to write to
+- uid: System.Xml.Linq.XStreamingElement.Save(TextWriter,System.Xml.Linq.SaveOptions)
+  id: Save(TextWriter,System.Xml.Linq.SaveOptions)
+  parent: System.Xml.Linq.XStreamingElement
+  langs:
+  - csharp
+  - vb
+  name: Save(TextWriter, SaveOptions)
+  fullName: System.Xml.Linq.XStreamingElement.Save(TextWriter, System.Xml.Linq.SaveOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+    startLine: 143
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Save the contents of an <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref> to a text writer
+
+    optionally formatting.
+  example: []
+  syntax:
+    content: public void Save(TextWriter textWriter, SaveOptions options)
+    content.vb: Public Sub Save(textWriter As TextWriter, options As SaveOptions)
+    parameters:
+    - id: textWriter
+      type: TextWriter
+      description: <see cref="!:TextWriter" /> to write to
+    - id: options
+      type: System.Xml.Linq.SaveOptions
+      description: >-
+        If SaveOptions.DisableFormatting is enabled the output is not indented.
+
+        If SaveOptions.OmitDuplicateNamespaces is enabled duplicate namespace declarations will be removed.
+- uid: System.Xml.Linq.XStreamingElement.Save(XmlWriter)
+  id: Save(XmlWriter)
+  parent: System.Xml.Linq.XStreamingElement
+  langs:
+  - csharp
+  - vb
+  name: Save(XmlWriter)
+  fullName: System.Xml.Linq.XStreamingElement.Save(XmlWriter)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+    startLine: 156
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Save the contents of an <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref> to an XML writer, not preserving whitespace
+  example: []
+  syntax:
+    content: public void Save(XmlWriter writer)
+    content.vb: Public Sub Save(writer As XmlWriter)
+    parameters:
+    - id: writer
+      type: XmlWriter
+      description: <see cref="!:XmlWriter" /> to write to
+- uid: System.Xml.Linq.XStreamingElement.ToString
+  id: ToString
+  parent: System.Xml.Linq.XStreamingElement
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  fullName: System.Xml.Linq.XStreamingElement.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+    startLine: 169
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: >-
+    Get the XML content of an <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref> as a
+
+    formatted string.
+  example: []
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: The XML text as a formatted string
+- uid: System.Xml.Linq.XStreamingElement.ToString(System.Xml.Linq.SaveOptions)
+  id: ToString(System.Xml.Linq.SaveOptions)
+  parent: System.Xml.Linq.XStreamingElement
+  langs:
+  - csharp
+  - vb
+  name: ToString(SaveOptions)
+  fullName: System.Xml.Linq.XStreamingElement.ToString(System.Xml.Linq.SaveOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+    startLine: 182
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Gets the XML content of this streaming element as a string.
+  example: []
+  syntax:
+    content: public string ToString(SaveOptions options)
+    content.vb: Public Function ToString(options As SaveOptions) As String
+    parameters:
+    - id: options
+      type: System.Xml.Linq.SaveOptions
+      description: >-
+        If SaveOptions.DisableFormatting is enabled the content is not indented.
+
+        If SaveOptions.OmitDuplicateNamespaces is enabled duplicate namespace declarations will be removed.
+    return:
+      type: System.String
+      description: An XML string
+- uid: System.Xml.Linq.XStreamingElement.WriteTo(XmlWriter)
+  id: WriteTo(XmlWriter)
+  parent: System.Xml.Linq.XStreamingElement
+  langs:
+  - csharp
+  - vb
+  name: WriteTo(XmlWriter)
+  fullName: System.Xml.Linq.XStreamingElement.WriteTo(XmlWriter)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    path: src/System.Xml.XDocument/src/System/Xml/Linq/XStreamingElement.cs
+    startLine: 191
+  assemblies:
+  - System.Xml.XDocument
+  namespace: System.Xml.Linq
+  summary: Write this <xref href="System.Xml.Linq.XStreamingElement" data-throw-if-not-resolved="false"></xref> to an <see cref="!:XmlWriter" />
+  example: []
+  syntax:
+    content: public void WriteTo(XmlWriter writer)
+    content.vb: Public Sub WriteTo(writer As XmlWriter)
+    parameters:
+    - id: writer
+      type: XmlWriter
+references:
+- uid: System.Xml.Linq
+  isExternal: false
+  name: System.Xml.Linq
+  fullName: System.Xml.Linq
+- uid: System.Object
+  isExternal: true
+  name: Object
+  fullName: System.Object
+- uid: System.Xml.Linq.XStreamingElement
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XStreamingElement
+  fullName: System.Xml.Linq.XStreamingElement
+- uid: System.Xml.Linq.XName
+  parent: System.Xml.Linq
+  isExternal: false
+  name: XName
+  fullName: System.Xml.Linq.XName
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  fullName: System.Object[]
+  fullname.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    fullName: ()
+- uid: Stream
+  isExternal: true
+  name: Stream
+  fullName: Stream
+- uid: System.Xml.Linq.SaveOptions
+  parent: System.Xml.Linq
+  isExternal: false
+  name: SaveOptions
+  fullName: System.Xml.Linq.SaveOptions
+- uid: TextWriter
+  isExternal: true
+  name: TextWriter
+  fullName: TextWriter
+- uid: XmlWriter
+  isExternal: true
+  name: XmlWriter
+  fullName: XmlWriter
+- uid: System.String
+  isExternal: true
+  name: String
+  fullName: System.String
